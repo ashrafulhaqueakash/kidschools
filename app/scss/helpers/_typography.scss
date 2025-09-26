@@ -1,0 +1,66 @@
+@use "../abstract" as *;
+.section-title-block,
+.block-title {
+  .sub_title{
+    color: $primary;
+    line-height: 1.2083333333;
+    letter-spacing: 0.02em;
+    font-family: $font-montserrat;
+    font-weight: 500;
+    margin-bottom: 8px;
+    font-size:18px;
+    @media (min-width:768px){
+      font-size:18px;
+    }
+    @media(min-width:992px){
+        font-size:22px;
+    }
+    @media (min-width:1200px){
+      font-size:24px;
+      margin-bottom: 15px;
+    }
+    @media (min-width:1600px){
+      font-size:24px;
+    }
+  }
+  .title {
+    line-height: 30px;
+    font-size: 26px;
+    font-family: $font-montserrat;
+    font-weight: 700;
+    color: $downriver;
+    margin-bottom: 12px;
+    @media (min-width:576px) {
+      font-size: 28px;
+      line-height: 35px;
+    }
+    @media (min-width:768px) {
+      font-size: 30px;
+      line-height: 40px;
+    }
+    @media (min-width:992px) {
+      font-size: 33px;
+    }
+    @media (min-width:1200px) {
+      font-size: 36px;
+      line-height: 50px;
+    }
+  }
+  p {
+    line-height: pxToEm(28,18);
+    margin-bottom: 25px;
+    font-size: 16px;
+    font-family: $font-opensans;
+    @media (min-width:370px) {
+      font-size: 17px;
+    }
+    @media (min-width:768px) {
+      font-size: 18px;
+    }
+  }
+}
+
+
+p{
+  font-family: $font-opensans;
+}

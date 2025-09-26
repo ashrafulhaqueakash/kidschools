@@ -1,0 +1,9 @@
+node_modules
+package-lock.json
+dist
+
+trash
+psd
+
+app/db.json
+yarn.lock

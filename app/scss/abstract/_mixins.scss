@@ -1,0 +1,82 @@
+@mixin flexAllCenter($display:flex){
+    display: $display;
+    justify-content: center;
+    align-items: center;
+}
+@mixin square($size,$corner){
+    min-width: $size;
+    max-width: $size;
+    min-height: $size;
+    max-height: $size;
+    border-radius: $corner;
+}
+@mixin size($sizeX,$sizeY){
+    min-width: $sizeX;
+    max-width: $sizeX;
+    min-height: $sizeY;
+    max-height: $sizeY;
+}
+@mixin translateCenter($size,$corner){
+    transform: translateX(-50%) translateY(-50%);
+}
+@mixin absolute($x:0,$y:0,$sizeY:100%,$sizeX:100%,$zIndex:unset){
+    position: absolute;
+    top:$x;
+    left:$y;
+    height:$sizeY;
+    width:$sizeX;
+    z-index: $zIndex;
+}
+
+
+@mixin text-gradient($value){
+    background-image: -webkit-linear-gradient(unquote($value));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+@mixin text-gradient-to-solid($value,$bg:transparent){
+    background: $bg;
+    background-clip: unset;
+    -webkit-text-fill-color: unset;
+    color: $value;
+}
+
+@mixin margin-x-with-var($value:null,$negativeVal:null){
+    @if($negativeVal){
+        margin-left: calc( -1  * var($value));
+        margin-right: calc( -1  * var($value));
+    }@else{
+        margin-left: var($value);
+        margin-right: var($value);
+    }
+    
+}
+@mixin margin-y-with-var($value:null,$negativeVal:null){
+    @if($negativeVal){
+        margin-top: calc(var($value) * -1);
+        margin-bottom: calc(var($value) * -1);
+    }@else{
+        margin-top: var($value);
+        margin-bottom: var($value);
+    }
+    
+}
+
+@mixin py($l:0,$r:$l) {
+    padding-top: $l;
+    padding-bottom: $r;
+}
+@mixin px($l:0,$r:$l) {
+    padding-left: $l;
+    padding-right: $r;
+}
+@mixin mx($l:0,$r:$l) {
+    margin-left: $l;
+    margin-right: $r;
+}
+@mixin my($l:0,$r:$l) {
+    margin-top: $l;
+    margin-bottom: $r;
+}
+
+

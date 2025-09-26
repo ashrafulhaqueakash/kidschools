@@ -1,0 +1,69 @@
+$white              :#fff;
+$black              :#000;
+$downriver          :#1F2041;
+$regent-gray        :#7F92A3;
+$geyser             :#D7E0E7;
+$dark-electric-blue :#536476;
+$bluebayoux         :#536374;
+$curious-blue       :#1D85E8;
+$geraldine          :#FE8083;
+$shamrock           :#2DC8A8;
+$koromiko           :#FFC258;
+$fair-pink          :#FFEEEE;
+$frosted-min        :#DFFFF8;
+$polar              :#F6FAFD;
+$mauve              :#BC9CFF;
+$footer             :#949DA6;
+$header-link-color  : $curious-blue;
+$btn-link-color     : $curious-blue;
+
+$primary: $geraldine;
+$secondary: $geraldine;
+$heading-color: $downriver;
+$body-color: $dark-electric-blue;
+$border-color: $geyser;
+
+
+$text-gradient-colors:(
+    "gradient-primary-secondary": "169deg, #5B6BE5 0%, #E45A91 46.88%, #F7A355 100%"
+    // "gradient-secondary-primary": 90deg, #5B6BE5 0%, #E45A91 46.88%, #F7A355 100%,
+);
+
+$btn-colors: (
+    "primary": $primary,
+    "secondary": $secondary,
+    "dodger-blue": $primary,
+    "black" : $black
+);
+
+// Your color map
+$colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "polar": $polar,
+  "shamrock": $shamrock,
+  "black": $black
+);
+
+// Generate background utilities
+@each $name, $color in $colors {
+  .bg-#{$name} { background-color: #{$color} !important; }
+  .hover\:bg-#{$name}:hover { background-color: #{$color} !important; }
+  .focus\:bg-#{$name}:focus { background-color: #{$color} !important; }
+  .bg-#{$name}-soft   { background-color: mix(white, $color, 85%) !important; }
+  .bg-#{$name}-tint   { background-color: lighten($color, 8%) !important; }
+  .bg-#{$name}-shade  { background-color: darken($color, 8%) !important; }
+}
+
+.bg-gradient{
+    &-1{
+        background: linear-gradient(180deg, #FFEDE9 0%, rgba(255, 237, 233, 0) 82.8%);
+    }
+}
+
+.gradient-primary-secondary{
+    color: linear-gradient(169deg, #5B6BE5 0%, #E45A91 46.88%, #F7A355);
+}
+.text-footer{
+    color: $footer;
+}

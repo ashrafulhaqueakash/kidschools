@@ -1,0 +1,107 @@
+@use "../../abstract" as *;
+
+.services-section{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    @media (min-width:768px) {
+        padding-top: 40px;
+        padding-bottom:40px;
+    }
+    @media (min-width:992px) {
+        padding-top: 47px;
+        padding-bottom: 47px;
+    }
+    @media (min-width:1200px) {
+        padding-top: 75px;
+        padding-bottom: 75px;
+    }
+    
+    .section-title-block{
+        margin-bottom: 40px;
+        @media (min-width:992px) {
+            margin-bottom: 60px;
+        }
+        @media (min-width:1200px) {
+            margin-bottom: 82px;
+        }
+        .title{
+            margin-bottom: 12px;
+           @media (min-width:768px) {
+                margin-bottom: 0;
+           }
+        }
+    }
+
+
+   
+}
+.service-card{
+    position: relative;
+    overflow: hidden;
+    border-radius: 4px;
+    .card-image{
+        position: relative;
+        &:before{
+            position: absolute;
+            content: "";
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(180deg, rgba(44, 50, 53, 0) 37.29%, rgba(44, 50, 53, 0.1188) 53.19%, rgba(44, 50, 53, 0.2288) 71.69%, rgba(44, 50, 53, 0.4048) 86.3%);
+            overflow: hidden;
+            width: 100%;
+            height: 100%;
+            opacity: 1;
+            transition: .4s ease;
+        }
+        img{
+            width: 100%;
+        }
+        
+    }
+    .card-hover-content{
+        color: $white ;
+        width: 100%;
+        position: absolute;
+        left: 0px;
+        bottom: 0px;
+        padding: 28px 25px;
+        a{
+            &:hover{
+                img{
+                    transform: translateX(10px);
+                }
+            }
+        }
+       .card-title{
+            font-weight: 600;
+            font-size: 22px;
+            line-height: pxToEm(22,18);
+            @media (min-width:768px) {
+                padding-right: 20%;
+            }
+        } 
+        .card-link{
+            color: #fff ;
+            display: flex;
+            transition: .4s;
+            span{
+                font-weight: 500;
+                padding-right: 10px;
+                font-size: 18px;
+                line-height: pxToEm(22,16);
+            }
+            &-icon{
+                img{
+                    transition: .4s;
+                    width: 100%;
+                }
+            }
+            &:hover{
+                i{
+                    transform: translateX(15%);
+                }
+            }
+        }
+    }
+}

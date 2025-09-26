@@ -1,0 +1,127 @@
+
+@use "../abstract" as *;
+
+.team-section{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    @media (min-width:576px) {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    @media (min-width:992px) {
+        padding-top: 47px;
+        padding-bottom: 47px;
+    }
+    @media (min-width:1200px) {
+        padding-top: 75px;
+        padding-bottom: 81px;
+    }
+    .section-title-block{
+        margin-bottom: 30px;
+        @media (min-width:992px) {
+            margin-bottom: 40px;
+        }
+        @media (min-width:1200px) {
+            margin-bottom: 60px;
+        }
+        p{
+            margin-bottom: 0;
+        }
+    }
+    .team-card{
+        position: relative;
+        border: 1px solid #fff;
+        z-index: 1;
+        text-align: center;
+        .card-image{
+            position: relative;
+            overflow: hidden;
+            border-radius: 7px;
+            z-index: 1;
+            img{
+                border-radius: 7px;
+                width: 100%;
+            }
+        }
+        
+        &:hover {
+            .card-hover-content{
+                transform: translateY(0%);
+                opacity: 1;
+            }
+        }
+    }
+    .card-texts{ 
+        margin-top: 5px;
+        @media (min-width:992px) {
+            margin-top: 30px;
+        }
+        .card-title{ 
+            font-family: $font-opensans;
+            font-size: 24px;
+            line-height:pxToEm(34,22);
+            font-weight: 400;
+            color: #232833;
+            @media (min-width:992px) {
+                margin-bottom:10px;
+            }
+        }
+        p{
+            font-size: 18px;
+            line-height: pxtoem(26,18);
+            letter-spacing: 0.04em;
+            color: $primary;
+            margin-bottom: 0;
+        }
+    }
+   
+    .card-hover-content {
+        display: flex;
+        transition: 0.5s;
+        align-items: flex-end;
+        justify-content: center;
+        @media (min-width:992px) {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(33, 42, 65, 0.37);
+            z-index: 1;
+            padding: 10px 15px;
+            transform: translateY(100%);
+            opacity: 0;
+            transition: 0.5s; 
+        }
+        ul{
+            padding: 0;
+            margin-bottom: 0;
+            list-style: none;
+            display: inline-flex;
+            margin-top: 14px;
+            @media (min-width:992px) {
+                margin-top: 22px;
+            }
+            a{
+                font-size: 14px;
+                text-decoration: none;
+                background-color: #404E5A;
+                @include square(22px,500px);
+                @include flexAllCenter;
+                transition: .4s;
+                color: #ffffff;
+                margin: 6px;
+                @media (min-width:992px) {
+                    background-color: #ffffff;
+                    color: #404E5A;
+                }
+                &:hover{
+                    color: $white;
+                    background: $secondary;
+                    border-color: transparent;
+                }
+            }
+        }
+    }
+    
+}

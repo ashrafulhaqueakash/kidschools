@@ -1,0 +1,11 @@
+@use "../abstract" as *;
+.site-header{
+    .nav-item{
+        .nav-link{
+            border-bottom: 2px solid transparent;
+           &.active, &:hover{
+               border-bottom: 2px solid $secondary;   
+            }
+        }
+    }
+}

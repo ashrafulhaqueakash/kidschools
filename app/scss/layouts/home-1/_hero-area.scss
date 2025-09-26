@@ -1,0 +1,131 @@
+@use "../../abstract" as *;
+/*---------------------------
+ Home 1 : Hero Area
+-----------------------------*/ 
+.hero-area{
+    background: #FBF9EF;
+    padding-top: 40px;
+    @media (min-width:576px) {
+      padding-top: 40px;
+    }
+    @media (min-width:992px) {
+      padding-top: 0px;
+    }
+    &__image{
+        width: 136%;
+        padding-bottom: 34px;
+        margin-left: -16%;
+        @media (min-width:480px) {
+          margin-top: -38%;
+        }
+        @media (min-width:768px) {
+          margin-top: 0%;
+          width: 201%;
+          margin-left: -50%;
+        }
+        @media (min-width:992px) {
+          width: 136%;
+          margin-left: -16%;
+        }
+    }
+  .hero-content{
+      position: relative;
+      @media (min-width:576px) {
+        padding-top: 10px;
+      }
+      @media (min-width:768px) {
+        padding-bottom: 120px;
+      }
+      @media (min-width:992px) {
+        padding-top: 75px;
+        padding-bottom: 160px;
+      }
+      @media (min-width:1200px) {
+        padding-top: 0;
+        padding-bottom: 200px;
+      }
+      .sub_title{
+          line-height: 1.2083333333;
+          letter-spacing: 0.02em;
+          font-weight: 500;
+          margin-bottom: 20px;
+          font-size:20px;
+          @media (min-width:768px){
+            font-size:22px;
+          }
+        }
+        .title {
+          line-height: 1.384615;
+          letter-spacing: 0.02em;
+          font-weight: 700;
+          margin-bottom: 18px;
+          font-size:38px;
+          color: $primary;
+          @media(min-width:576px){
+              font-size:45px;
+          }
+          @media(min-width:992px){
+              font-size:52px;
+          }
+          .underline-shape{
+              position: relative;
+              display: inline-block;
+              &:before{
+                  content: "";
+                  background-image: url(../image/png/hero-Shape-1.png);
+                  background-repeat: no-repeat;
+                  background-position: left bottom;
+                  background-size: 85%;
+                  height: 100%;
+                  width: 100%;
+                  position: absolute;
+                  left: -5px;
+                  bottom: -17px;
+                  display: none;
+                  @media (min-width:480px) {
+                    display: block;
+                  }
+                  @media (min-width:992px) {
+                      background-size: 189px auto;
+                  }
+              }
+          }
+        }
+        p {
+          font-family: $font-opensans;
+          font-size: 15px;
+          line-height: 1.69;
+          color: $primary;
+          margin-bottom: 20px;
+          @media (min-width:480px) {
+            font-size: 17px;
+          }
+          @media (min-width:992px) {
+            font-size: 18px;
+          }
+        }
+  
+  
+  
+      
+      .button-shape-block{
+          position: relative;
+          display: inline-block;
+      }
+      .hero-arrow-shape{
+        position: absolute;
+        top: 0px;
+        right: 0;
+        transform: translateX(100%);
+        display: none;
+        @media (min-width:768px) {
+          max-width: 80%;
+          display: block;
+        }
+        @media (min-width:992px) {
+          max-width: 100%;
+        }
+      }
+  }
+}
+
