@@ -1,0 +1,12 @@
+<!-- Counters (Home 1) -->
+ {% macro counterLeftIcon(options) %}
+    <div class="counters text-center text-md-start d-flex gap-3">
+    <div class="counters__icon">
+        <img src="{{options.icon}}" alt="">
+    </div>
+    <div class="counters__content">
+    <h4 class="counters__content__number text-secondary"><span class="counter">{{options.counter}}</span>{{options.unit}}</h4>
+    <p class="counters__content__text">{{options.text}}</p>
+    </div>
+    </div>
+{% endmacro %}

@@ -393,6 +393,24 @@ p {
 .btn:hover i {
   transform: translateX(15%);
 }
+.btn-primary {
+  border: 1px solid #FE8083;
+  background-color: #FE8083;
+  color: #fff;
+}
+.btn-secondary {
+  border: 1px solid #FE8083;
+  background-color: #FE8083;
+}
+.btn-accent {
+  border: 1px solid #FFEEEE;
+  background-color: #FFEEEE;
+  color: #FE8083;
+}
+.btn-accent:hover {
+  background-color: #FE8083;
+  color: #fff;
+}
 .btn-outline {
   border: 1px solid #D7E0E7;
   background-color: transparent;
@@ -405,17 +423,6 @@ p {
 }
 .btn-outline i {
   margin-right: 10px;
-}
-
-.btn-primary {
-  border: 1px solid #FE8083;
-  background-color: #FE8083;
-  color: #fff;
-}
-
-.btn-secondary {
-  border: 1px solid #FE8083;
-  background-color: #FE8083;
 }
 
 .site-header .nav-item .nav-link {
