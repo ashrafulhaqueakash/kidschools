@@ -9,8 +9,8 @@
     @include flexAllCenter(inline-flex);
     padding-left: 20px;
     padding-right: 20px;
-    transition: background,.4s border-color,.4s color;
     font-weight: 500;
+    transition: 0.4s;
     i{
         padding-left: 11px;
         column-rule: inherit;

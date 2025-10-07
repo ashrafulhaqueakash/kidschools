@@ -1,6 +1,6 @@
 $white              :#fff;
 $black              :#000;
-$downriver          :#1F2041;
+$downriver          :#092C4C;
 $regent-gray        :#7F92A3;
 $geyser             :#D7E0E7;
 $dark-electric-blue :#536476;
@@ -42,7 +42,9 @@ $colors: (
   "secondary": $secondary,
   "polar": $polar,
   "shamrock": $shamrock,
-  "black": $black
+  "geyser": $geyser,
+  "black": $black,
+  "koromiko": $koromiko
 );
 
 // Generate background utilities

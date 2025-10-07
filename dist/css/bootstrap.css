@@ -102,6 +102,30 @@
   background-color: #26a78c !important;
 }
 
+.bg-geyser {
+  background-color: #D7E0E7 !important;
+}
+
+.hover\:bg-geyser:hover {
+  background-color: #D7E0E7 !important;
+}
+
+.focus\:bg-geyser:focus {
+  background-color: #D7E0E7 !important;
+}
+
+.bg-geyser-soft {
+  background-color: #f9fafb !important;
+}
+
+.bg-geyser-tint {
+  background-color: #f1f4f6 !important;
+}
+
+.bg-geyser-shade {
+  background-color: #beccd8 !important;
+}
+
 .bg-black {
   background-color: #000 !important;
 }
@@ -124,6 +148,30 @@
 
 .bg-black-shade {
   background-color: black !important;
+}
+
+.bg-koromiko {
+  background-color: #FFC258 !important;
+}
+
+.hover\:bg-koromiko:hover {
+  background-color: #FFC258 !important;
+}
+
+.focus\:bg-koromiko:focus {
+  background-color: #FFC258 !important;
+}
+
+.bg-koromiko-soft {
+  background-color: #fff6e6 !important;
+}
+
+.bg-koromiko-tint {
+  background-color: #ffd181 !important;
+}
+
+.bg-koromiko-shade {
+  background-color: #ffb32f !important;
 }
 
 .bg-gradient-1 {
@@ -235,6 +283,30 @@
   background-color: #26a78c !important;
 }
 
+.bg-geyser {
+  background-color: #D7E0E7 !important;
+}
+
+.hover\:bg-geyser:hover {
+  background-color: #D7E0E7 !important;
+}
+
+.focus\:bg-geyser:focus {
+  background-color: #D7E0E7 !important;
+}
+
+.bg-geyser-soft {
+  background-color: #f9fafb !important;
+}
+
+.bg-geyser-tint {
+  background-color: #f1f4f6 !important;
+}
+
+.bg-geyser-shade {
+  background-color: #beccd8 !important;
+}
+
 .bg-black {
   background-color: #000 !important;
 }
@@ -257,6 +329,30 @@
 
 .bg-black-shade {
   background-color: black !important;
+}
+
+.bg-koromiko {
+  background-color: #FFC258 !important;
+}
+
+.hover\:bg-koromiko:hover {
+  background-color: #FFC258 !important;
+}
+
+.focus\:bg-koromiko:focus {
+  background-color: #FFC258 !important;
+}
+
+.bg-koromiko-soft {
+  background-color: #fff6e6 !important;
+}
+
+.bg-koromiko-tint {
+  background-color: #ffd181 !important;
+}
+
+.bg-koromiko-shade {
+  background-color: #ffb32f !important;
 }
 
 .bg-gradient-1 {
@@ -283,7 +379,7 @@ h5,
 .h5,
 h6,
 .h6 {
-  color: #1F2041;
+  color: #092C4C;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -292,7 +388,9 @@ h6,
   --bs-secondary: #FE8083;
   --bs-polar: #F6FAFD;
   --bs-shamrock: #2DC8A8;
+  --bs-geyser: #D7E0E7;
   --bs-black: #000;
+  --bs-koromiko: #FFC258;
   --bs-gray-100: #f8f9fa;
   --bs-gray-200: #e9ecef;
   --bs-gray-300: #dee2e6;
