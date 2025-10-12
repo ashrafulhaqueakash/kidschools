@@ -6,20 +6,13 @@ $(document).ready(function() {
     AOS.init();
     window.addEventListener('load', AOS.refresh);
     // Slick Slider
-    if (jQuery(".testimonial-slider").length > 0) {
-        $('.testimonial-slider').slick({
-            dots: true,
+    if (jQuery(".activity-slider").length > 0) {
+        $('.activity-slider').slick({
+            dots: false,
             infinite: true,
             speed: 500,
-            slidesToShow: 2,
-            slidesToScroll: 2,
-            responsive: [{
-                breakpoint: 768,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                }
-            }]
+            slidesToShow: 1,
+            slidesToScroll: 1,
         });
     }
     // Dropdown Menu
