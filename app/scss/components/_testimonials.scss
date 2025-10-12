@@ -1,0 +1,58 @@
+@use "../abstract" as *;
+.testimonials{}
+.t-carousel {
+    &__slides{
+        text-align: center;
+    }
+  &__quote-badge {
+    background: $primary;
+    color: $white;
+    box-shadow: 0 6px 20px rgba($primary, 0.35);
+  }
+
+  &__title {
+    color: $heading-color;
+    font-size: 24px;
+font-style: normal;
+font-weight: 600;
+line-height: 34px;
+  }
+
+  &__desc {
+    color: $regent-gray;
+    font-size: 22px;
+font-style: normal;
+font-weight: 400;
+line-height: 42px;
+  }
+
+  &__person {
+    color: $downriver;
+    font-size: 18px;
+font-style: normal;
+font-weight: 600;
+line-height: 28px; 
+  }
+  &__role {
+    color: $regent-gray;
+    font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: 25px; /* 166.667% */
+letter-spacing: 0.45px;
+  }
+
+  &__avatars .slick-slide {
+    opacity: 0.55;
+  }
+  &__avatars .slick-center {
+    opacity: 1;
+  }
+
+  &__avatar {
+    border: 3px solid $white;
+    box-shadow: 0 6px 20px rgba($downriver, 0.12);
+  }
+
+
+}

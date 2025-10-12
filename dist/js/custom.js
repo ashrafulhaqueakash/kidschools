@@ -15,6 +15,46 @@ $(document).ready(function() {
             slidesToScroll: 1,
         });
     }
+    if (jQuery(".t-carousel__slides").length > 0) {
+        // Text slider (one at a time)
+        $('.t-carousel__slides').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+            fade: false,
+            adaptiveHeight: true,
+            asNavFor: '.t-carousel__thumbs'
+        });
+
+        // Avatar nav slider (centered thumbs)
+        $('.t-carousel__thumbs').slick({
+            slidesToShow: 5,
+            slidesToScroll: 1,
+            asNavFor: '.t-carousel__slides',
+            centerMode: true,
+            focusOnSelect: true,
+            arrows: false,
+            responsive: [{
+                    breakpoint: 900,
+                    settings: {
+                        slidesToShow: 5
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 3
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 3
+                    }
+                }
+            ]
+        });
+    }
     // Dropdown Menu
     $('.dropdown-menu a.dropdown-toggle').on('click', function(e) {
         if (!$(this).next().hasClass('show')) {
