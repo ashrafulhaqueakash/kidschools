@@ -807,4 +807,80 @@ p {
   line-height: 1.8125rem;
   margin-bottom: 0;
 }
+
+.cta-block {
+  padding-top: 150px;
+  padding-bottom: 350px;
+  min-height: 700px;
+  z-index: 1;
+}
+.cta-block .section-title-block {
+  margin-bottom: 0;
+}
+@media (min-width: 768px) {
+  .cta-block .section-title-block {
+    margin-bottom: 20px;
+  }
+}
+@media (min-width: 992px) {
+  .cta-block .section-title-block {
+    margin-bottom: 30px;
+  }
+}
+.cta-block .section-title-block .title {
+  color: #fff;
+}
+@media (min-width: 992px) {
+  .cta-block .section-title-block .title {
+    font-size: 60px;
+  }
+}
+.cta-block .section-title-block .sub_heading,
+.cta-block .section-title-block p {
+  color: rgba(255, 255, 255, 0.8);
+}
+@media (min-width: 992px) {
+  .cta-block .section-title-block p {
+    font-size: 22px;
+  }
+}
+.cta-block .shape-1 {
+  position: absolute;
+  top: 5%;
+  left: 2%;
+  z-index: 1;
+  width: 8.5%;
+}
+.cta-block .shape-1 img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.cta-block .shape-2 {
+  position: absolute;
+  top: 5%;
+  right: 2%;
+  z-index: 1;
+  width: 12.1%;
+}
+.cta-block .shape-2 img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.cta-block .shape-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  pointer-events: none;
+}
+.cta-block .shape-bottom img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
 /*# sourceMappingURL=maps/main.css.map */
