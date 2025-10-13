@@ -1,0 +1,31 @@
+{% extends "template.njk" %}
+
+{% from "pages/Common/Breadcrumb.njk" import breadcrumbBlock1 %}
+
+{% block main %}
+  {% include "pages/Common/Header.njk" %}
+
+  {{ breadcrumbBlock1(
+    title   = "Blog Page"
+  ) }}
+
+<div class="blog-page pt-100 pb-100">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-12 col-lg-8">
+        <div class="row g-4">
+            {% include "pages/Blogs/Blogs.njk" %}
+        </div>
+      </div>
+      <div class="col-12 col-lg-4">
+        <div class="sidebar">
+         {% include "components/Sidebar.njk" %}
+         </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+{% include "pages/Common/Footer.njk" %}
+{% endblock %}
