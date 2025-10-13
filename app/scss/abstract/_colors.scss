@@ -64,6 +64,10 @@ $colors: (
     &-2{
         background: linear-gradient(180deg, #343742 0%, #090B18 100%);
     }
+    &-3{
+        background:  linear-gradient(180deg, #EEFCFF 0%, rgba(244, 253, 255, 0.00) 100%);
+
+    }
 }
 
 .gradient-primary-secondary{

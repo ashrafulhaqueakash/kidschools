@@ -1,9 +1,66 @@
-node_modules
+# Dependency directories
+node_modules/
+bower_components/
+
+# Build output
+dist/
+build/
+.next/
+out/
+
+# Runtime logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# OS metadata
+.DS_Store
+Thumbs.db
+
+# Local environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Temporary or cache files
+.tmp/
+temp/
+.cache/
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Coverage reports
+coverage/
+.nyc_output/
+
+# Lock files (keep only one depending on package manager)
 package-lock.json
-dist
+# yarn.lock
+# pnpm-lock.yaml
 
-trash
-psd
-
+# Local databases or mock data
 app/db.json
-yarn.lock
+
+# Custom or temporary folders
+trash/
+tmp/
+test-output/
+logs/
+
+# Design / binary assets
+*.psd
+*.ai
+*.sketch
+*.zip
+
+# OS or editor settings
+*.bak
+*.orig
+*.log
+*.iml
+*.sublime-workspace

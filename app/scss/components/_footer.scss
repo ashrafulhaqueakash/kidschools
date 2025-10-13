@@ -1,0 +1,61 @@
+@use "../abstract" as *;
+.footer-section {
+  .footer-top-shape {
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    z-index: -1;
+    width: 30%;
+    img {
+      width: 100%;
+      height: auto;
+      overflow: hidden;
+      object-fit: contain;
+    }
+  }
+  .widget-list{
+    li{
+      margin-bottom: 10px;
+      a{
+        color: $heading-color;
+        font-size: 16px;
+        transition: 0.3s;
+        &:hover{
+          color: $secondary;
+        }
+      }
+    }
+  }
+  .footer-bottom {
+    padding-top: 350px;
+    position: relative;
+    z-index: 2;
+  }
+  .footer-bottom-shape {
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    z-index: 0;
+    width: 100%;
+    img {
+      width: 100%;
+      height: auto;
+      overflow: hidden;
+      object-fit: contain;
+    }
+  }
+  .footer-copyright{
+    color: $white;
+    &__links{
+      a{
+        color: $white;
+        margin-left: 20px;
+        font-size: 16px;
+        transition: 0.3s;
+        &:hover{
+          color: $secondary;
+        }
+      }
+    }
+  }
+}

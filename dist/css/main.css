@@ -173,6 +173,9 @@
 .bg-gradient-2 {
   background: linear-gradient(180deg, #343742 0%, #090B18 100%);
 }
+.bg-gradient-3 {
+  background: linear-gradient(180deg, #EEFCFF 0%, rgba(244, 253, 255, 0) 100%);
+}
 
 .gradient-primary-secondary {
   color: linear-gradient(169deg, #5B6BE5 0%, #E45A91 46.88%, #F7A355);
@@ -624,6 +627,63 @@ p {
 }
 .t-carousel .slick-arrow::before {
   color: #D7E0E7;
+}
+
+.footer-section .footer-top-shape {
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  z-index: -1;
+  width: 30%;
+}
+.footer-section .footer-top-shape img {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.footer-section .widget-list li {
+  margin-bottom: 10px;
+}
+.footer-section .widget-list li a {
+  color: #092C4C;
+  font-size: 16px;
+  transition: 0.3s;
+}
+.footer-section .widget-list li a:hover {
+  color: #FE8083;
+}
+.footer-section .footer-bottom {
+  padding-top: 350px;
+  position: relative;
+  z-index: 2;
+}
+.footer-section .footer-bottom-shape {
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+  z-index: 0;
+  width: 100%;
+}
+.footer-section .footer-bottom-shape img {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.footer-section .footer-copyright {
+  color: #fff;
+}
+.footer-section .footer-copyright__links a {
+  color: #fff;
+  margin-left: 20px;
+  font-size: 16px;
+  transition: 0.3s;
+}
+.footer-section .footer-copyright__links a:hover {
+  color: #FE8083;
 }
 
 /*---------------------------
