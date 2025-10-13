@@ -1,0 +1,61 @@
+{% extends "template.njk" %}
+
+{% from "pages/Common/Breadcrumb.njk" import breadcrumbBlock1 %}
+
+{% block main %}
+  {% include "pages/Common/Header.njk" %}
+
+  {{ breadcrumbBlock1(
+    title   = "Contact Page"
+  ) }}
+
+  {% include "pages/Home/Contact.njk" %}
+
+<!-- Contact Bottom Widgets -->
+<div class="contact-bottom-widgets">
+  <div class="container">
+    <div class="row">
+      <!-- Single Widget -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="single-widget d-flex">
+          <div class="single-widget__icon">
+            <i class="fas fa-phone-alt"></i>
+          </div>
+          <div class="single-widget__content">
+            <h5 class="single-widget__content__title">For info call us</h5>
+            <p class="single-widget__content__text"><a href="tel:(217) 555-0113">(217) 555-0113</a></p>
+          </div>
+        </div>
+      </div>
+      <!-- End Single Widget -->
+      <!-- Single Widget -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="single-widget d-flex">
+          <div class="single-widget__icon">
+            <i class="far fa-envelope-open"></i>
+          </div>
+          <div class="single-widget__content">
+            <h5 class="single-widget__content__title">OUR MAIL ADDRESS</h5>
+            <p class="single-widget__content__text"><a href="mailto:demomail@email.com">demomail@email.com</a></p>
+          </div>
+        </div>
+      </div>
+      <!-- End Single Widget -->
+      <!-- Single Widget -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="single-widget d-flex">
+          <div class="single-widget__icon">
+            <i class="fas fa-map-marker-alt"></i>
+          </div>
+          <div class="single-widget__content">
+            <h5 class="single-widget__content__title">OUR SCHOOL ADDRESS</h5>
+            <p class="single-widget__content__text">2623 Railroad St Orange, Kansas 78577 United States</p>
+          </div>
+        </div>
+      </div>
+      <!-- End Single Widget -->
+  </div>
+</div>
+
+{% include "pages/Common/Footer.njk" %}
+{% endblock %}
