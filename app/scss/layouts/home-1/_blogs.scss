@@ -51,13 +51,18 @@
         padding-bottom: 10px;
         position: relative;
         z-index: 1;
-        &__title{
+        &__title,
+        &__title a{
             font-size: 22px;
             font-weight: 600;
             line-height: 2rem;
             color: $heading-color;
             margin-bottom: 10px;
+            transition: 0.4s;
         }
+         &__title a:hover{
+            color: $primary;
+         }
         &__text,
         &__text p{
             font-size: 17px;
@@ -86,6 +91,20 @@
             font-weight: 500;
             color: $regent-gray;
             font-size: 15px;
+        }
+    }
+}
+
+
+.single-blog{
+    &__image{
+        width: 100%;
+        height: 435px;
+        margin-bottom: 20px;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
     }
 }

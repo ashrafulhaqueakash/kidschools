@@ -152,4 +152,9 @@
       }
     }
   }
+  &:first-child{
+    .widgets{
+      padding-top: 0;
+    }
+  }
 }

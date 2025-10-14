@@ -1,0 +1,62 @@
+{% extends "template.njk" %}
+
+{% from "pages/Common/Breadcrumb.njk" import breadcrumbBlock1 %}
+
+{% block main %}
+  {% include "pages/Common/Header.njk" %}
+
+  {{ breadcrumbBlock1(
+    title   = "Single Post"
+  ) }}
+
+<div class="blog-page pt-100 pb-100">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-12 col-lg-8">
+        <div class="row g-4">
+          <!-- Single Post -->
+           <div class="single-blog">
+            <div class="single-blog__image">
+              <img class="w-100" src="./image/jpg/blog/blog-1.jpg" alt="">
+              </div>
+              <h3>5 Easy Ways You Can Turn Playschool Into Success.</h3>
+              <p>Globally benchmark end-to-end meta-services before B2B mindshare. Competently embrace distributed imperatives without frictionless deliverables. Conveniently synergize alternative internal or "organic" sources</p>
+              <h1>H1: Newyork time reported againest america</h1>
+              <p>Welcome to The Type Nugget Beta - the online typesetting tool that will eventually make all of your online typesetting dreams come true</p>
+              <p>Configure some properties in the panel on the right and it’ll change this preview text live in browser (also go ahead and type in these paragraphs; it’s all content-editable).</p>
+              <p>Click ‘Generate Code’ to generate a tidy, accessible CSS stylesheet that you can implement with zero fiddling. Spending less time manually coding and more time swiftly creating hella fine web type painlessly via a pleasant user interface? I don’t know about you, but I am all about that life.</p>
+              <p>Create a free account and we’ll save your theme every time you generate, so when you login you can pick up where you left off.</p>
+              <p>Type Nugget has been built on the input from the community, and we want to make it the best web tool that we possibly can for you - take our two minute survey and tell us what you what you’d love to see. Oh yeah, you'll need to right click on that link to open it.</p>
+              <h2>H2: What does Type Nugget do so far?</h2>
+              <p>Type Nugget Beta currently features the following;</p>
+              <p>A live browser preview so you can design a pixel-perfect stylesheet Generate tidy, usable CSS Save your progress when you create a free account</p>
+              <h3>H3: Be part of the Type Nugget Revolution</h3>
+              <p>We’re really excited about the future. Fully responsive out of the gate, and built with relative units, Type Nugget in its purest form will generate semantically sound, browser compatible, maintainable, and accessible LESS, SASS, or CSS ready to download or link directly to your site.</p>
+              <h4>H4: What’s still to come?</h4>
+              <ul>
+                <li>We are pretty excited to have the following in development:</li>
+                <li>Breakpoints for responsive styles</li>
+                <li>Browse and load from galleries of user-created themes</li>
+                <li>Heaps more webfonts</li>
+                <li>Your ideas here...</li>
+              </ul>
+              <h5>H5: This sounds fantastic, but what can I do to make it more fantastic?</h5>
+              <p>My thoughts exactly. What’s great about being in Beta is that it’s the perfect time for you and we’re asking for your ideas to help us make Type Nugget even crispier.</p>
+              <p>Give it a whirl and send us any thoughts you may have! We’d love to hear your ideas on anything from usability, to new dev features, webfonts, or your favourite late-night hot sandwich recipes, etc. We’ll get back to you, and for every good idea that comes our way we will think of you while humming the tune of the classic Golden Girls theme song ‘Thank you for being a friend’.</p>
+              <h6>H6: Get your (oven) mitts on</h6>
+              <p>That’s it, I’ve fulfilled my preview text panel filler-text quota. So now there’s no time to lose - get around it already and see how easy it is to bake yourself a piping hot nugget of CSS.</p>
+           </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-4">
+        <div class="sidebar">
+         {% include "components/Sidebar.njk" %}
+         </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+{% include "pages/Common/Footer.njk" %}
+{% endblock %}
