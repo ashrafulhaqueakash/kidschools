@@ -1,11 +1,11 @@
 {% extends "template.njk" %}
 
-{% from "pages/Common/Breadcrumb.njk" import breadcrumbBlock1 %}
+{% from "pages/Common/Breadcrumb.njk" import breadcrumbBlock %}
 
 {% block main %}
   {% include "pages/Common/Header.njk" %}
 
-  {{ breadcrumbBlock1(
+  {{ breadcrumbBlock(
     title   = "Contact Page"
   ) }}
 

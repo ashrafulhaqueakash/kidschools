@@ -107,4 +107,29 @@
             object-fit: cover;
         }
     }
+    ul, ol{
+    margin:0;
+    padding:0;
+    margin-bottom: 30px;
+    list-style:none;
+    li{
+       list-style: none;
+       padding-left: 15px;
+       position: relative;
+       z-index: 1;
+       line-height: 32px;
+         &::before{
+              content: '';
+              position: absolute;
+              top: 50%;
+              left: 0;
+              transform: translateY(-50%);
+              width: 6px;
+              height: 2px;
+              background-color: $heading-color;
+              border-radius: 3px;
+              z-index: -1;
+            }
+    }
+}
 }

@@ -1,4 +1,4 @@
-{% macro breadcrumbBlock1(title='', details='', bg='', crumbs=[]) -%}
+{% macro breadcrumbBlock(title='', details='', bg='', crumbs=[]) -%}
 {# 
   Breadcrumb Block (Nunjucks)
   --------------------------------------------------------------------
@@ -66,8 +66,8 @@
    Example usage #1 (direct include)
    ------------------------------------------------------------------ #}
 {# 
-{% from "Breadcrumb.njk" import breadcrumbBlock1 %}
-{{ breadcrumbBlock1(
+{% from "Breadcrumb.njk" import breadcrumbBlock %}
+{{ breadcrumbBlock(
   title   = "About Us",
   details = "We craft digital commerce experiences.",
   bg      = "/images/breadcrumbs/about-hero.jpg",
@@ -92,8 +92,8 @@
    ---
 
    Then in your layout:
-   {% from "Breadcrumb.njk" import breadcrumbBlock1 %}
-   {{ breadcrumbBlock1(
+   {% from "Breadcrumb.njk" import breadcrumbBlock %}
+   {{ breadcrumbBlock(
      title   = title, 
      details = breadcrumb.details, 
      bg      = breadcrumb.bg, 

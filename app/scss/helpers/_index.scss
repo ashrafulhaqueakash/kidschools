@@ -1,6 +1,7 @@
 @use "../abstract" as *;
 @forward "./typography";
 @forward "./section-padding";
+@forward "./utility";
 
 .color-inherit{
     color: inherit;
