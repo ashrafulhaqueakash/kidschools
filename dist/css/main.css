@@ -286,6 +286,20 @@
     font-size: 17px;
   }
 }
+.section-title-block.dark-mode-texts,
+.block-title.dark-mode-texts {
+  color: #fff !important;
+}
+.section-title-block.dark-mode-texts .pre_heading,
+.section-title-block.dark-mode-texts .sub_heading,
+.section-title-block.dark-mode-texts .title,
+.section-title-block.dark-mode-texts p,
+.block-title.dark-mode-texts .pre_heading,
+.block-title.dark-mode-texts .sub_heading,
+.block-title.dark-mode-texts .title,
+.block-title.dark-mode-texts p {
+  color: #fff !important;
+}
 
 h6, .h6,
 h5, .h5,
@@ -1420,6 +1434,95 @@ p {
   border-radius: 5px;
   border-color: #D7E0E7;
   background-color: #F6FAFD;
+}
+
+.ks-mission-progress .progress {
+  background: #eef2f6;
+  border-radius: 50px;
+  overflow: hidden;
+}
+.ks-mission-progress .progress-bar {
+  width: 0;
+  height: 10px;
+  border-radius: 50px;
+  transition: width 1.2s ease-in-out;
+}
+@media (prefers-reduced-motion: reduce) {
+  .ks-mission-progress .progress-bar {
+    transition: none;
+  }
+}
+.ks-mission-progress__single:nth-child(1n+2) .progress-bar {
+  background-color: #FE8083;
+}
+.ks-mission-progress__single:nth-child(2n+1) .progress-bar {
+  background-color: #3b82f6;
+}
+.ks-mission-progress__single:nth-child(3n+1) .progress-bar {
+  background-color: #FFC258;
+}
+
+.about-block__img {
+  position: relative;
+  z-index: 1;
+  margin-right: 10%;
+}
+.about-block__img .about-img {
+  width: 100%;
+  padding: 14px;
+  box-shadow: 0 20px 52px 0 rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+  background-color: #fff;
+}
+.about-block__img .shape-1 {
+  position: absolute;
+  top: -2%;
+  left: -2%;
+  z-index: 1;
+}
+.about-block__img .shape-2 {
+  position: absolute;
+  top: -7%;
+  right: -36px;
+  z-index: -1;
+}
+.about-block__img .shape-3 {
+  position: absolute;
+  bottom: 0%;
+  right: -10%;
+  z-index: 1;
+}
+.about-block .mission-block__item .section-title-block__text:last-child {
+  margin-bottom: 0;
+}
+
+.our-activities-block-style-2 {
+  position: relative;
+  z-index: 1;
+}
+.our-activities-block-style-2 .shape-1 {
+  width: 14.6%;
+  top: 10%;
+}
+.our-activities-block-style-2 .shape-2 {
+  top: 8%;
+  right: 5%;
+  width: 12%;
+}
+.our-activities-block-style-2::before {
+  content: "";
+  background: linear-gradient(180deg, #343742 0%, #090B18 100%);
+  width: 100%;
+  height: 80%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+.our-activities-block-style-2 .activity-card-grid {
+  margin-bottom: -100px;
 }
 
 .contact-bottom-widgets .single-widget {

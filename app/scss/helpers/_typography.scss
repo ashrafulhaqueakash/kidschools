@@ -68,6 +68,18 @@
       font-size: 17px;
     }
   }
+  &.dark-mode-texts {
+  color: #fff !important;
+
+  // Ensure all nested text inherits white
+  .pre_heading,
+  .sub_heading,
+  .title,
+  p {
+    color: #fff !important;
+  }
+}
+
 }
 // Typography
 h6, .h6, 
