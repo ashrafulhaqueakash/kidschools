@@ -13,15 +13,11 @@
             margin-bottom: 30px;
         }
         .title{
-            color: $white;
             @media (min-width: 992px) {
                 font-size: 60px;
             }
         }
-        .sub_heading, 
-        p{
-            color: rgba(255, 255, 255, 0.8);
-        }
+   
          p{
              @media (min-width: 992px) {
                 font-size: 22px;
@@ -62,6 +58,21 @@
             width: 100%;
             height: auto;
             object-fit: contain;
+        }
+    }
+
+    &--style-2{
+        padding-top: 0;
+        padding-bottom: 150px;
+        align-content: center;
+        min-height: 550px;
+        .shape-1{
+            max-width: 32px;
+            top: 40%;
+        }
+        .shape-2{
+            max-width: 33px;
+            top: 40%;
         }
     }
 }
