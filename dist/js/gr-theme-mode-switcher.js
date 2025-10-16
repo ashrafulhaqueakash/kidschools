@@ -69,10 +69,10 @@ $(document).ready(function() {
     mode_panel_activities();
 
 })
-<script src="plugins/jquery/jquery.min.js"></script>
-<script src="plugins/fancybox/jquery.fancybox.min.js"></script>
 
-<script>
+
+// Home Page About Popup
+
   $('[data-fancybox]').fancybox({
     buttons: [
       "zoom",
@@ -89,4 +89,4 @@ $(document).ready(function() {
       color: 'f00'
     }
   });
-</script>
+
