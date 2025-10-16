@@ -1,0 +1,199 @@
+{% extends "template.njk" %}
+
+{% from "pages/Common/Breadcrumb.njk" import breadcrumbBlock %}
+
+{% block main %}
+{% include "pages/Common/Header.njk" %}
+
+{{ breadcrumbBlock(
+title = "Course"
+) }}
+
+
+
+
+<div class="feature-coruse-block pt-100 pb-100 position-relative">
+  <!-- Shape 1 -->
+  <div class="shape-1">
+    <img src="/image/svg/dragon.svg" alt="">
+  </div>
+  <!-- Shape 2 -->
+  <div class="shape-2">
+    <img src="/image/svg/elephent.svg" alt="">
+  </div>
+  <!-- Shape 3 -->
+  <div class="shape-3">
+    <img src="/image/svg/zerraf.svg" alt="">
+  </div>
+  <!-- Shape 4 -->
+  <div class="shape-4">
+    <img src="/image/svg/doll.svg" alt="">
+  </div>
+  <div class="container">
+    <div class="row justify-content-center mb-4">
+      <div class="col-auto">
+        <div class="filter-button-group btn-group flex-wrap" role="group">
+          <button type="button" class="btn btn-outline-primary active" data-filter="*">All</button>
+          <button type="button" class="btn btn-outline-primary" data-filter=".drawing">Drawing</button>
+          <button type="button" class="btn btn-outline-primary" data-filter=".music">Music</button>
+          <button type="button" class="btn btn-outline-primary" data-filter=".science">Science</button>
+        </div>
+      </div>
+    </div>
+    <div class="row g-4 coruse-grid filter-grid">
+      <!-- Single Feature Course -->
+      <div class="col-12 col-md-6 col-lg-4 grid-item feature-course-item drawing">
+        <div class="feature-course-card">
+          <div class="feature-course-card__image">
+            <img class="w-100" src="./image/jpg/home-1/feature-course-1.jpg" alt="">
+          </div>
+          <div class="feature-course-card__content">
+            <div class="feature-course-card__content__fee d-inline-flex align-content-center text-center py-1 px-3">
+              Price: <span> $50.00</span></div>
+            <h4 class="feature-course-card__content__title">Basic Drawing & Paint Learning Class.</h4>
+            <div class="feature-course-card__details feature-course__details d-flex justify-content-between mt-4 mb-4">
+              <div class="feature-course-card__details__classes d-flex gap-2">
+                <div class="feature-course__details__icon"><img src="./image/svg/book.svg" alt=""></div>
+                <div class="feature-course__details__text">20 <span>Classes</span></div>
+              </div>
+              <div class="feature-course-card__details__duration d-flex gap-2">
+                <div class="feature-course__details__icon"><img src="./image/svg/feather-users.svg" alt=""></div>
+                <div class="feature-course__details__text">24-36 <span>Months</span></div>
+              </div>
+            </div>
+            <a href="#" class="btn btn-accent w-100">Learn More About Course</a>
+          </div>
+        </div>
+      </div>
+      <!-- End Single Feature Course -->
+      <!-- Single Feature Course -->
+      <div class="col-12 col-md-6 col-lg-4 grid-item feature-course-item music">
+        <div class="feature-course-card">
+          <div class="feature-course-card__image">
+            <img class="w-100" src="./image/jpg/home-1/feature-course-2.jpg" alt="">
+          </div>
+          <div class="feature-course-card__content">
+            <div class="feature-course-card__content__fee d-inline-flex align-content-center text-center py-1 px-3">
+              Price: <span> $50.00</span></div>
+            <h4 class="feature-course-card__content__title">Basic Drawing & Paint Learning Class.</h4>
+            <div class="feature-course-card__details feature-course__details d-flex justify-content-between mt-4 mb-4">
+              <div class="feature-course-card__details__classes d-flex gap-2">
+                <div class="feature-course__details__icon"><img src="./image/svg/book.svg" alt=""></div>
+                <div class="feature-course__details__text">20 <span>Classes</span></div>
+              </div>
+              <div class="feature-course-card__details__duration d-flex gap-2">
+                <div class="feature-course__details__icon"><img src="./image/svg/feather-users.svg" alt=""></div>
+                <div class="feature-course__details__text">24-36 <span>Months</span></div>
+              </div>
+            </div>
+            <a href="#" class="btn btn-accent w-100">Learn More About Course</a>
+          </div>
+        </div>
+      </div>
+      <!-- End Single Feature Course -->
+      <!-- Single Feature Course -->
+      <div class="col-12 col-md-6 col-lg-4 grid-item feature-course-item science">
+        <div class="feature-course-card">
+          <div class="feature-course-card__image">
+            <img class="w-100" src="./image/jpg/home-1/feature-course-3.jpg" alt="">
+          </div>
+          <div class="feature-course-card__content">
+            <div class="feature-course-card__content__fee d-inline-flex align-content-center text-center py-1 px-3">
+              Price: <span> $50.00</span></div>
+            <h4 class="feature-course-card__content__title">Basic Drawing & Paint Learning Class.</h4>
+            <div class="feature-course-card__details feature-course__details d-flex justify-content-between mt-4 mb-4">
+              <div class="feature-course-card__details__classes d-flex gap-2">
+                <div class="feature-course__details__icon"><img src="./image/svg/book.svg" alt=""></div>
+                <div class="feature-course__details__text">20 <span>Classes</span></div>
+              </div>
+              <div class="feature-course-card__details__duration d-flex gap-2">
+                <div class="feature-course__details__icon"><img src="./image/svg/feather-users.svg" alt=""></div>
+                <div class="feature-course__details__text">24-36 <span>Months</span></div>
+              </div>
+            </div>
+            <a href="#" class="btn btn-accent w-100">Learn More About Course</a>
+          </div>
+        </div>
+      </div>
+      <!-- End Single Feature Course -->
+      <!-- Single Feature Course -->
+      <div class="col-12 col-md-6 col-lg-4 grid-item feature-course-item drawing">
+        <div class="feature-course-card">
+          <div class="feature-course-card__image">
+            <img class="w-100" src="./image/jpg/home-1/feature-course-1.jpg" alt="">
+          </div>
+          <div class="feature-course-card__content">
+            <div class="feature-course-card__content__fee d-inline-flex align-content-center text-center py-1 px-3">
+              Price: <span> $50.00</span></div>
+            <h4 class="feature-course-card__content__title">Basic Drawing & Paint Learning Class.</h4>
+            <div class="feature-course-card__details feature-course__details d-flex justify-content-between mt-4 mb-4">
+              <div class="feature-course-card__details__classes d-flex gap-2">
+                <div class="feature-course__details__icon"><img src="./image/svg/book.svg" alt=""></div>
+                <div class="feature-course__details__text">20 <span>Classes</span></div>
+              </div>
+              <div class="feature-course-card__details__duration d-flex gap-2">
+                <div class="feature-course__details__icon"><img src="./image/svg/feather-users.svg" alt=""></div>
+                <div class="feature-course__details__text">24-36 <span>Months</span></div>
+              </div>
+            </div>
+            <a href="#" class="btn btn-accent w-100">Learn More About Course</a>
+          </div>
+        </div>
+      </div>
+      <!-- End Single Feature Course -->
+      <!-- Single Feature Course -->
+      <div class="col-12 col-md-6 col-lg-4 grid-item feature-course-item music">
+        <div class="feature-course-card">
+          <div class="feature-course-card__image">
+            <img class="w-100" src="./image/jpg/home-1/feature-course-2.jpg" alt="">
+          </div>
+          <div class="feature-course-card__content">
+            <div class="feature-course-card__content__fee d-inline-flex align-content-center text-center py-1 px-3">
+              Price: <span> $50.00</span></div>
+            <h4 class="feature-course-card__content__title">Basic Drawing & Paint Learning Class.</h4>
+            <div class="feature-course-card__details feature-course__details d-flex justify-content-between mt-4 mb-4">
+              <div class="feature-course-card__details__classes d-flex gap-2">
+                <div class="feature-course__details__icon"><img src="./image/svg/book.svg" alt=""></div>
+                <div class="feature-course__details__text">20 <span>Classes</span></div>
+              </div>
+              <div class="feature-course-card__details__duration d-flex gap-2">
+                <div class="feature-course__details__icon"><img src="./image/svg/feather-users.svg" alt=""></div>
+                <div class="feature-course__details__text">24-36 <span>Months</span></div>
+              </div>
+            </div>
+            <a href="#" class="btn btn-accent w-100">Learn More About Course</a>
+          </div>
+        </div>
+      </div>
+      <!-- End Single Feature Course -->
+      <!-- Single Feature Course -->
+      <div class="col-12 col-md-6 col-lg-4 grid-item feature-course-item science">
+        <div class="feature-course-card">
+          <div class="feature-course-card__image">
+            <img class="w-100" src="./image/jpg/home-1/feature-course-3.jpg" alt="">
+          </div>
+          <div class="feature-course-card__content">
+            <div class="feature-course-card__content__fee d-inline-flex align-content-center text-center py-1 px-3">
+              Price: <span> $50.00</span></div>
+            <h4 class="feature-course-card__content__title">Basic Drawing & Paint Learning Class.</h4>
+            <div class="feature-course-card__details feature-course__details d-flex justify-content-between mt-4 mb-4">
+              <div class="feature-course-card__details__classes d-flex gap-2">
+                <div class="feature-course__details__icon"><img src="./image/svg/book.svg" alt=""></div>
+                <div class="feature-course__details__text">20 <span>Classes</span></div>
+              </div>
+              <div class="feature-course-card__details__duration d-flex gap-2">
+                <div class="feature-course__details__icon"><img src="./image/svg/feather-users.svg" alt=""></div>
+                <div class="feature-course__details__text">24-36 <span>Months</span></div>
+              </div>
+            </div>
+            <a href="#" class="btn btn-accent w-100">Learn More About Course</a>
+          </div>
+        </div>
+      </div>
+      <!-- End Single Feature Course -->
+    </div>
+
+  </div>
+</div>
+{% include "pages/Common/Footer.njk" %}
+{% endblock %}

@@ -60,72 +60,83 @@ $(document).ready(function () {
       });
 
       // Progress Bar
-(function () {
-  // Find every mission-progress block on the page
-  const containers = document.querySelectorAll('.ks-mission-progress');
-  if (!containers.length) return;
+      (function () {
+            // Find every mission-progress block on the page
+            const containers = document.querySelectorAll('.ks-mission-progress');
+            if (!containers.length) return;
 
-  // Animation helpers
-  const easeInOutCubic = t => (t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2);
+            // Animation helpers
+            const easeInOutCubic = t => (t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2);
 
-  function animateBarAndCounter(bar, label) {
-    const target = parseFloat(bar.dataset.value || '0'); // % number
-    // Keep counter duration in sync with CSS transition duration of the bar
-    const td = getComputedStyle(bar).transitionDuration;
-    const duration = td.includes('ms') ? parseFloat(td) : parseFloat(td || '1.2') * 1000 || 1200;
+            function animateBarAndCounter(bar, label) {
+                  const target = parseFloat(bar.dataset.value || '0'); // % number
+                  // Keep counter duration in sync with CSS transition duration of the bar
+                  const td = getComputedStyle(bar).transitionDuration;
+                  const duration = td.includes('ms') ? parseFloat(td) : parseFloat(td || '1.2') * 1000 || 1200;
 
-    // Start width animation (CSS handles the smoothness)
-    // Ensure starting state is 0% for rerenders
-    bar.style.width = '0%';
-    // Kick off on next frame to ensure transition applies
-    requestAnimationFrame(() => (bar.style.width = target + '%'));
+                  // Start width animation (CSS handles the smoothness)
+                  // Ensure starting state is 0% for rerenders
+                  bar.style.width = '0%';
+                  // Kick off on next frame to ensure transition applies
+                  requestAnimationFrame(() => (bar.style.width = target + '%'));
 
-    // Count-up text animation
-    const start = performance.now();
-    function step(now) {
-      const t = Math.min(1, (now - start) / duration);
-      const eased = easeInOutCubic(t);
-      const current = Math.round(eased * target);
-      if (label) label.textContent = current + '%';
-      bar.setAttribute('aria-valuenow', String(current));
-      if (t < 1) requestAnimationFrame(step);
-      else {
-        // Snap to final just in case
-        if (label) label.textContent = target + '%';
-        bar.setAttribute('aria-valuenow', String(target));
-      }
-    }
-    requestAnimationFrame(step);
-  }
+                  // Count-up text animation
+                  const start = performance.now();
+                  function step(now) {
+                        const t = Math.min(1, (now - start) / duration);
+                        const eased = easeInOutCubic(t);
+                        const current = Math.round(eased * target);
+                        if (label) label.textContent = current + '%';
+                        bar.setAttribute('aria-valuenow', String(current));
+                        if (t < 1) requestAnimationFrame(step);
+                        else {
+                              // Snap to final just in case
+                              if (label) label.textContent = target + '%';
+                              bar.setAttribute('aria-valuenow', String(target));
+                        }
+                  }
+                  requestAnimationFrame(step);
+            }
 
-  function run(container) {
-    // For each progress row, pair the bar with its label above
-    container.querySelectorAll('.progress').forEach(progressEl => {
-      const bar = progressEl.querySelector('.progress-bar');
-      if (!bar) return;
-      const labelRow = progressEl.previousElementSibling; // the d-flex row above
-      const label = labelRow ? labelRow.querySelector('.progress-bar-value') : null;
-      animateBarAndCounter(bar, label);
-    });
-  }
+            function run(container) {
+                  // For each progress row, pair the bar with its label above
+                  container.querySelectorAll('.progress').forEach(progressEl => {
+                        const bar = progressEl.querySelector('.progress-bar');
+                        if (!bar) return;
+                        const labelRow = progressEl.previousElementSibling; // the d-flex row above
+                        const label = labelRow ? labelRow.querySelector('.progress-bar-value') : null;
+                        animateBarAndCounter(bar, label);
+                  });
+            }
 
-  // Animate when visible (once)
-  if ('IntersectionObserver' in window) {
-    const io = new IntersectionObserver(entries => {
-      entries.forEach(e => {
-        if (e.isIntersecting) {
-          run(e.target);
-          io.unobserve(e.target); // run once per block
-        }
+            // Animate when visible (once)
+            if ('IntersectionObserver' in window) {
+                  const io = new IntersectionObserver(entries => {
+                        entries.forEach(e => {
+                              if (e.isIntersecting) {
+                                    run(e.target);
+                                    io.unobserve(e.target); // run once per block
+                              }
+                        });
+                  }, { threshold: 0.2 });
+                  containers.forEach(c => io.observe(c));
+            } else {
+                  // Fallback: animate after load
+                  window.addEventListener('load', () => containers.forEach(run));
+            }
+      })();
+
+      // ISOTOpe
+      $('.filter-grid').isotope({
+            // options
+            itemSelector: '.grid-item',
+            layoutMode: 'fitRows'
       });
-    }, { threshold: 0.2 });
-    containers.forEach(c => io.observe(c));
-  } else {
-    // Fallback: animate after load
-    window.addEventListener('load', () => containers.forEach(run));
-  }
-})();
-
+      // filter items on button click
+      $('.filter-button-group').on( 'click', 'button', function() {
+      var filterValue = $(this).attr('data-filter');
+      $('.filter-grid').isotope({ filter: filterValue });
+      });
       // Sticky Header
       window.onscroll = function () {
             scrollFunction()

@@ -718,6 +718,12 @@ p {
   text-align: center;
   border: none;
 }
+.team-member__item__img {
+  width: 100%;
+}
+.team-member__item__img img {
+  width: 100%;
+}
 .team-member__item__meta-info {
   padding-top: 10px;
   padding-left: 10px;
@@ -947,6 +953,19 @@ p {
 }
 .about-section .section-title-block .title {
   padding-right: 20px;
+}
+
+.feature-course-filters .btn {
+  border-radius: 50px;
+  padding: 6px 18px;
+  margin: 4px;
+  transition: all 0.25s ease-in-out;
+}
+
+.feature-course-filters .btn.active,
+.feature-course-filters .btn:hover {
+  background-color: #1D85E8;
+  color: #fff;
 }
 
 .feature-coruse-block {

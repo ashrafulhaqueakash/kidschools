@@ -1,5 +1,17 @@
 @use "../../abstract" as *;
 
+.feature-course-filters .btn {
+  border-radius: 50px;
+  padding: 6px 18px;
+  margin: 4px;
+  transition: all 0.25s ease-in-out;
+}
+.feature-course-filters .btn.active,
+.feature-course-filters .btn:hover {
+  background-color: #1D85E8;
+  color: #fff;
+}
+
 .feature-coruse-block{
     z-index: 1;
     .shape-1{

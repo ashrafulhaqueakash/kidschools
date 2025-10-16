@@ -1,0 +1,32 @@
+{
+	
+	"counters_data": [
+		{
+			"icon": "svg/feather-users.svg",
+			"counter": "20",
+			"text": "Teacher Available"
+		},
+		{
+			"icon": "svg/book.svg",
+			"counter": "500",
+			"text": "Classes Completed"
+		},
+		{
+			"icon": "svg/home.svg",
+			"counter": "150",
+			"text": "Happy Parents"
+		},
+		{
+			"icon": "svg/feather-users-2.svg",
+			"counter": "290",
+			"text": "Students Currently"
+		},
+		{
+			"icon": "svg/feather-users-2.svg",
+			"counter": "290",
+			"text": "Students Currently"
+		}
+	]
+	
+	
+}

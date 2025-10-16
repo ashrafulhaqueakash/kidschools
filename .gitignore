@@ -43,8 +43,6 @@ package-lock.json
 # yarn.lock
 # pnpm-lock.yaml
 
-# Local databases or mock data
-app/db.json
 
 # Custom or temporary folders
 trash/
