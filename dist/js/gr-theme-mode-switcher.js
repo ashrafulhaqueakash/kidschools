@@ -69,3 +69,24 @@ $(document).ready(function() {
     mode_panel_activities();
 
 })
+<script src="plugins/jquery/jquery.min.js"></script>
+<script src="plugins/fancybox/jquery.fancybox.min.js"></script>
+
+<script>
+  $('[data-fancybox]').fancybox({
+    buttons: [
+      "zoom",
+      "share",
+      "slideShow",
+      "fullScreen",
+      "close"
+    ],
+    youtube: {
+      controls: 1,
+      showinfo: 0
+    },
+    vimeo: {
+      color: 'f00'
+    }
+  });
+</script>

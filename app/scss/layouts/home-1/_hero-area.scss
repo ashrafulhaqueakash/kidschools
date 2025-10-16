@@ -6,4 +6,11 @@
     padding-top: 40px;
     padding-bottom: 250px;
     min-height: 850px;
+    .pre_heading{
+        font-size: calc(28px + 1vw);
+        font-weight: 500;
+        @media (min-width: 1200px) {
+            font-size: 40px;
+        }
+    }
 }

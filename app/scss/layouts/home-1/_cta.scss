@@ -2,8 +2,19 @@
 .cta-block{
     padding-top: 150px;
     padding-bottom: 350px;
-    min-height: 700px;
+    min-height: 550px;
     z-index: 1;
+    padding-bottom: 60px;
+    @media (min-width: 767px){
+      padding-bottom: 80px;
+      min-height: 700px;
+    }
+    @media (min-width: 1200px){
+      padding-bottom:100px;
+    }
+    @media (min-width: 1600px){
+      padding-bottom: 350px;
+    }
     .section-title-block{
         margin-bottom: 0;
         @media (min-width:768px){
@@ -74,5 +85,8 @@
             max-width: 33px;
             top: 40%;
         }
+    }
+    .btn{
+        font-size: 18px;
     }
 }

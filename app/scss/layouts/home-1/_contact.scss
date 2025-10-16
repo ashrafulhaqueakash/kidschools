@@ -30,6 +30,7 @@
 .contact-form-block{
     position: relative;
     z-index: 1;
+    padding-bottom: 40px;
     .shape-1{
         position: absolute;
         top: 10%;
@@ -44,11 +45,20 @@
         }
     }
     &__inner{
-        padding-left: 50px;
+        padding-top: 40px;
+        padding-left: 0px;
+        @media (min-width:1600px){
+            padding-left: 50px;
+        }
         .form-control{
             border-radius: 5px;
             border-color: $geyser;
             background-color: $polar;
         }
+    }
+    .btn{
+        padding: 0 45px;
+        min-height: 70px;
+        font-size: 18px;
     }
 }

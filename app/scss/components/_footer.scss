@@ -1,5 +1,6 @@
 @use "../abstract" as *;
 .footer-section {
+  padding-top: 40px;
   .footer-top-shape {
     position: absolute;
     top: 30%;
@@ -13,12 +14,26 @@
       object-fit: contain;
     }
   }
+  .footer-content{
+    p{
+      font-size: 17px;
+    }
+    .widget-title{
+      font-size: 24px;
+    }
+  }
+  .btn{
+    i{
+      padding-left: 0;
+      font-size: 19px;
+    }
+  }
   .widget-list{
     li{
       margin-bottom: 10px;
       a{
         color: $heading-color;
-        font-size: 16px;
+        font-size: 19px;
         transition: 0.3s;
         &:hover{
           color: $secondary;
@@ -27,9 +42,27 @@
     }
   }
   .footer-bottom {
-    padding-top: 350px;
+    padding-top: 60px;
     position: relative;
     z-index: 2;
+    @media (min-width: 767px){
+      padding-top: 80px;
+    }
+    @media (min-width: 1200px){
+      padding-top:100px;
+    }
+    @media (min-width: 1600px){
+      padding-top: 350px;
+    }
+    .footer-bottom-pb{
+      padding-bottom: 10px;
+      @media (min-width: 1200px){
+        padding-bottom: 20px;
+      }
+      @media (min-width: 1600px){
+        padding-bottom: 30px;
+      }
+    }
   }
   .footer-bottom-shape {
     position: absolute;

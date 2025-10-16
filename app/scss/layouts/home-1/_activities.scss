@@ -1,7 +1,7 @@
 @use "../../abstract" as *;
 
 .our-activities-block{
-        .shape-1{
+    .shape-1{
         position: absolute;
         top: 35%;
         left: 2%;
@@ -11,6 +11,12 @@
             width: 100%;
             height: 100%;
             object-fit: contain;
+        }
+    }
+    .section-title-block{
+        text-align: center;
+        @media (min-width: 576px){
+            text-align: left;
         }
     }
     .shape-2{
