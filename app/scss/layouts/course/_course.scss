@@ -1,0 +1,31 @@
+@use "../../abstract" as *;
+
+.feature-coruse-block{
+    padding-top: 40px;
+    @media (min-width: 992px){
+        padding-top: 60px;
+    }
+    @media (min-width: 1200px){
+        padding-top: 80px;
+    }
+    @media (min-width: 1600px){
+        padding-top: 100px;
+    }
+    .filter-button-group{
+        gap: 10px;
+        margin-bottom: 30px;
+        .btn-outline-primary{
+            background-color: #F7FAFE;
+            border-color: #F7FAFE;
+        }
+        .btn-outline-primary.active{
+            background-color: #092C4C;
+            border-color: #092C4C;
+            color: #fff;
+            border-radius: inherit;
+            &:focus{
+                box-shadow:0 0 0 0.2rem rgba(27, 24, 24, 0.5);
+            }
+        }
+    }
+}
