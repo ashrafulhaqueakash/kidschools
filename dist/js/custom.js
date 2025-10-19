@@ -80,17 +80,28 @@ $(document).ready(function() {
 
     // Progress Bar
     (function() {
+        // Find every mission-progress block on the page
         const containers = document.querySelectorAll('.ks-mission-progress');
         if (!containers.length) return;
+
+        // Animation helpers
         const easeInOutCubic = t => (t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2);
 
         function animateBarAndCounter(bar, label) {
-            const target = parseFloat(bar.dataset.value || '0');
+            const target = parseFloat(bar.dataset.value || '0'); // % number
+            // Keep counter duration in sync with CSS transition duration of the bar
             const td = getComputedStyle(bar).transitionDuration;
             const duration = td.includes('ms') ? parseFloat(td) : parseFloat(td || '1.2') * 1000 || 1200;
+
+            // Start width animation (CSS handles the smoothness)
+            // Ensure starting state is 0% for rerenders
             bar.style.width = '0%';
+            // Kick off on next frame to ensure transition applies
             requestAnimationFrame(() => (bar.style.width = target + '%'));
+
+            // Count-up text animation
             const start = performance.now();
+
             function step(now) {
                 const t = Math.min(1, (now - start) / duration);
                 const eased = easeInOutCubic(t);
@@ -99,6 +110,7 @@ $(document).ready(function() {
                 bar.setAttribute('aria-valuenow', String(current));
                 if (t < 1) requestAnimationFrame(step);
                 else {
+                    // Snap to final just in case
                     if (label) label.textContent = target + '%';
                     bar.setAttribute('aria-valuenow', String(target));
                 }
@@ -107,21 +119,23 @@ $(document).ready(function() {
         }
 
         function run(container) {
+            // For each progress row, pair the bar with its label above
             container.querySelectorAll('.progress').forEach(progressEl => {
                 const bar = progressEl.querySelector('.progress-bar');
                 if (!bar) return;
-                const labelRow = progressEl.previousElementSibling;
+                const labelRow = progressEl.previousElementSibling; // the d-flex row above
                 const label = labelRow ? labelRow.querySelector('.progress-bar-value') : null;
                 animateBarAndCounter(bar, label);
             });
         }
 
+        // Animate when visible (once)
         if ('IntersectionObserver' in window) {
             const io = new IntersectionObserver(entries => {
                 entries.forEach(e => {
                     if (e.isIntersecting) {
                         run(e.target);
-                        io.unobserve(e.target);
+                        io.unobserve(e.target); // run once per block
                     }
                 });
             }, {
@@ -129,26 +143,29 @@ $(document).ready(function() {
             });
             containers.forEach(c => io.observe(c));
         } else {
+            // Fallback: animate after load
             window.addEventListener('load', () => containers.forEach(run));
         }
     })();
 
-    // ISOTOPE: filter and active button
+    // ISOTOpe
     $('.filter-grid').isotope({
+        // options
         itemSelector: '.grid-item',
         layoutMode: 'fitRows'
     });
+    // filter items on button click
     $('.filter-button-group').on('click', 'button', function() {
         var filterValue = $(this).attr('data-filter');
-        $('.filter-grid').isotope({ filter: filterValue });
-        $('.filter-button-group button').removeClass('active');
-        $(this).addClass('active');
+        $('.filter-grid').isotope({
+            filter: filterValue
+        });
     });
-
     // Sticky Header
     window.onscroll = function() {
         scrollFunction()
     };
+
     function scrollFunction() {
         if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
             $(".sticky-header").addClass("scrolling");
@@ -161,21 +178,20 @@ $(document).ready(function() {
             $(".sticky-header.scrolling").removeClass("reveal-header");
         }
     }
-    // Counter-up plugin activation
+    /* Counter-up plugin activation */
     if ($.fn.counterUp) {
         $('.counter').counterUp({
+            // delay: 10,
             time: 1000
         });
     }
-
-    // Preloader: use .on('load') (not .load)
-    $(window).on('load', function() {
+    // Preloader
+    $(window).load(function() {
         setTimeout(function() {
             $('#loading').fadeOut(500);
         }, 1000);
         setTimeout(function() {
             $('#loading').remove();
         }, 2000);
-    });
-
-});
+    })
+})
