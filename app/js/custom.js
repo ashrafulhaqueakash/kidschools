@@ -176,7 +176,7 @@ $(document).ready(function () {
       })
 
 
-      
+
       $(document).ready(function() {
       var current = window.location.pathname.split('/').pop();
       $('.navbar-nav .nav-link').each(function() {
@@ -186,6 +186,14 @@ $(document).ready(function () {
             $(this).addClass('active text-secondary');
       }
       });
+      });
+
+
+      // About Us Fancy Box
+      Fancybox.bind("[data-fancybox]", {
+            Video: {
+            autoplay: true
+            }
       });
 
 })
