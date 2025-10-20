@@ -213,4 +213,14 @@ $(document).ready(function() {
         });
     });
 
+
+    // About Us Fancy Box
+    Fancybox.bind("[data-fancybox]", {
+        Video: {
+            autoplay: true
+        }
+    });
+
+
+
 })
