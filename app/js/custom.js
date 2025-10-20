@@ -136,7 +136,12 @@ $(document).ready(function () {
       $('.filter-button-group').on( 'click', 'button', function() {
       var filterValue = $(this).attr('data-filter');
       $('.filter-grid').isotope({ filter: filterValue });
+      // remove active class from all buttons
+      $('.filter-button-group button').removeClass('active');
+      // add active class to the clicked button
+      $(this).addClass('active');
       });
+      // End Isotop
       // Sticky Header
       window.onscroll = function () {
             scrollFunction()
@@ -169,4 +174,18 @@ $(document).ready(function () {
                   $('#loading').remove();
             }, 2000);
       })
+
+
+      
+      $(document).ready(function() {
+      var current = window.location.pathname.split('/').pop();
+      $('.navbar-nav .nav-link').each(function() {
+      var link = $(this).attr('href');
+      if(link === current || (link === 'index.html' && current === '')) {
+            $('.navbar-nav .nav-link').removeClass('active text-secondary');
+            $(this).addClass('active text-secondary');
+      }
+      });
+      });
+
 })

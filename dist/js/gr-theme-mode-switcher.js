@@ -69,24 +69,3 @@ $(document).ready(function() {
     mode_panel_activities();
 
 })
-
-
-// Home Page About Popup
-
-  $('[data-fancybox]').fancybox({
-    buttons: [
-      "zoom",
-      "share",
-      "slideShow",
-      "fullScreen",
-      "close"
-    ],
-    youtube: {
-      controls: 1,
-      showinfo: 0
-    },
-    vimeo: {
-      color: 'f00'
-    }
-  });
-

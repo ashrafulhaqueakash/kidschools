@@ -1736,6 +1736,32 @@ p {
      object-fit: contain;
 }
 
+.feature-coruse-block .filter-button-group {
+  width: 100%;
+  margin-bottom: 30px;
+  gap: 10px;
+}
+.feature-coruse-block .filter-button-group .btn-outline-primary {
+  border-color: transparent;
+  background-color: #F7FAFE;
+  border-radius: inherit;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.feature-coruse-block .filter-button-group .btn-outline-primary:focus {
+  box-shadow: 0 0 0 0.1rem rgba(22, 22, 22, 0.5);
+}
+.feature-coruse-block .filter-button-group .btn-outline-primary:hover {
+  background-color: #FE8083;
+  color: white;
+}
+.feature-coruse-block .filter-button-group .btn-outline-primary.active {
+  background-color: #092C4C;
+  color: white;
+  border-color: #092C4C;
+  border-radius: inherit;
+}
+
 .contact-bottom-widgets .single-widget {
   padding: 30px 20px;
   border-radius: 10px;

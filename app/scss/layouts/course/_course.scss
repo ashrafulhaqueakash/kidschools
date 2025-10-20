@@ -1,0 +1,29 @@
+@use "../../abstract" as *;
+
+.feature-coruse-block{
+    .filter-button-group{
+        width: 100%;
+        margin-bottom: 30px;
+        gap: 10px;
+        .btn-outline-primary{
+            border-color:transparent;
+            background-color: #F7FAFE;
+            border-radius: inherit;
+            text-transform: uppercase;
+            font-weight: 600;
+            &:focus{
+                box-shadow: 0 0 0 0.1rem rgba(22, 22, 22, 0.5);
+            }
+            &:hover{
+                background-color:#FE8083;
+                color: white;
+            }
+        }
+        .btn-outline-primary.active{
+            background-color: #092C4C;
+            color: white;
+            border-color: #092C4C;
+            border-radius: inherit;
+        }
+    }
+}
