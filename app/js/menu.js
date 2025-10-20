@@ -95,6 +95,8 @@
          }
  	}
  }
+
+ 
  window.onload = function(){
  	if(this.innerWidth < 992){
         $( function() {
