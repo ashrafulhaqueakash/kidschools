@@ -4,6 +4,7 @@
   .nav-item {
     .nav-link {
       border-bottom: 2px solid transparent;
+      margin: 0 10px;
       &.active,
       &:hover {
         border-bottom: 2px solid $secondary;

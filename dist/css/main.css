@@ -519,6 +519,7 @@ p {
 
 .site-header .nav-item .nav-link {
   border-bottom: 2px solid transparent;
+  margin: 0 10px;
 }
 .site-header .nav-item .nav-link.active, .site-header .nav-item .nav-link:hover {
   border-bottom: 2px solid #FE8083;
