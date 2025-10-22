@@ -682,6 +682,15 @@ p {
 
 .breadcrumb-block {
   text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-bottom: 40px;
+}
+@media (min-width: 992px) {
+  .breadcrumb-block {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
 }
 .breadcrumb-block .shape-1 {
   position: absolute;
@@ -1895,10 +1904,15 @@ p {
 }
 
 .contact-bottom-widgets .single-widget {
-  padding: 30px 20px;
+  padding: 0;
   border-radius: 10px;
   background: #fff;
   transition: all 0.3s ease-in-out;
+}
+@media (min-width: 992px) {
+  .contact-bottom-widgets .single-widget {
+    padding: 30px 20px;
+  }
 }
 .contact-bottom-widgets .single-widget__icon {
   flex: 0 0 62px;

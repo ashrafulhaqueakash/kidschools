@@ -3,11 +3,13 @@
 
 .contact-bottom-widgets{
     .single-widget{
-        padding: 30px 20px;
+        padding: 0;
         border-radius: 10px;
         background: $white;
         transition: all 0.3s ease-in-out;
-
+        @media (min-width: 992px) {
+            padding: 30px 20px;
+        }
         &__icon{
             flex: 0 0 62px;
             width: 62px;
