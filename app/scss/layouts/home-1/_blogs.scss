@@ -1,10 +1,6 @@
 @use "../../abstract" as *;
 
 .blog-block{
-    padding-bottom: 30px;
-    @media (min-width: 1200px){
-        padding-bottom: 40px;
-    }
     z-index: 1;
     .shape-1{
         position: absolute;
