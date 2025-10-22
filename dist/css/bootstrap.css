@@ -126,6 +126,30 @@
   background-color: #beccd8 !important;
 }
 
+.bg-curious-blue {
+  background-color: #1D85E8 !important;
+}
+
+.hover\:bg-curious-blue:hover {
+  background-color: #1D85E8 !important;
+}
+
+.focus\:bg-curious-blue:focus {
+  background-color: #1D85E8 !important;
+}
+
+.bg-curious-blue-soft {
+  background-color: #ddedfc !important;
+}
+
+.bg-curious-blue-tint {
+  background-color: #4299ec !important;
+}
+
+.bg-curious-blue-shade {
+  background-color: #1470c8 !important;
+}
+
 .bg-black {
   background-color: #000 !important;
 }
@@ -313,6 +337,30 @@
   background-color: #beccd8 !important;
 }
 
+.bg-curious-blue {
+  background-color: #1D85E8 !important;
+}
+
+.hover\:bg-curious-blue:hover {
+  background-color: #1D85E8 !important;
+}
+
+.focus\:bg-curious-blue:focus {
+  background-color: #1D85E8 !important;
+}
+
+.bg-curious-blue-soft {
+  background-color: #ddedfc !important;
+}
+
+.bg-curious-blue-tint {
+  background-color: #4299ec !important;
+}
+
+.bg-curious-blue-shade {
+  background-color: #1470c8 !important;
+}
+
 .bg-black {
   background-color: #000 !important;
 }
@@ -394,6 +442,7 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   --bs-polar: #F6FAFD;
   --bs-shamrock: #2DC8A8;
   --bs-geyser: #D7E0E7;
+  --bs-curious-blue: #1D85E8;
   --bs-black: #000;
   --bs-koromiko: #FFC258;
   --bs-gray-100: #f8f9fa;
