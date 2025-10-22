@@ -517,9 +517,19 @@ p {
   transition: 0.4s;
 }
 
+.site-header {
+  position: relative;
+  z-index: 99999999;
+}
 .site-header .nav-item .nav-link {
   border-bottom: 2px solid transparent;
-  margin: 0 10px;
+}
+@media (min-width: 1200px) {
+  .site-header .nav-item .nav-link {
+    margin: 0 10px;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
 }
 .site-header .nav-item .nav-link.active, .site-header .nav-item .nav-link:hover {
   border-bottom: 2px solid #FE8083;
@@ -572,14 +582,17 @@ p {
   width: 1.2%;
 }
 .site-header__bottom .header-btn {
-  padding: 5px 10px;
+  padding: 5px 7px;
   min-height: 44px;
-  line-height: 1px;
+  text-align: left;
+  font-size: 14px;
+  background-color: #fff;
 }
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   .site-header__bottom .header-btn {
     min-height: 54px;
     padding: 5px 10px;
+    font-size: 16px;
   }
 }
 .site-header__bottom .header-btn i {
@@ -641,6 +654,7 @@ p {
             backface-visibility: hidden;
     pointer-events: none;
     /* prevent stray taps when hidden */
+    z-index: 99999;
   }
   .site-header__bottom .main-menu .navbar-nav {
     width: 100%;
