@@ -149,3 +149,84 @@
         }
     }
 }
+
+// Single Course
+
+.course{
+    padding-top: -50px;
+    padding-bottom: 50px;
+    @media (min-width: 992px) {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    &__thumbnails{
+        width: 100%;
+        height: 500px;
+        border-radius: 8px;
+        overflow: hidden;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    &__bottom{
+        background-color: #092C4C;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+      &__details{
+            position: relative;
+            z-index: 1;
+            overflow: hidden;
+            &::before{
+                content: "";
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translateY(-50%);
+                width: 1px;
+                height: 30px;
+                background-color: #fff;
+            }
+            &__classes, 
+            &__duration{
+              display: flex;
+              color: #fff;
+              padding: 5px 20px;
+            }
+            &__icon{
+                width: 34px;
+                height: 34px;
+                margin-top: 0px;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                }
+            }
+            &__text{
+                font-size: 24px;
+                font-weight: 700;
+                margin-bottom: 0;
+                line-height: 1.1;
+                span{
+                    display: block;
+                    font-weight: 400;
+                    font-size: 16px;
+                }
+            }
+        }
+        &__content{
+            &__fee{
+                background-color: $koromiko;
+                color: $heading-color;
+                border-radius: 4px;
+                font-size: 22px;
+                span{
+                    font-weight: 600;
+                    margin-left: 7px;
+                }
+            }
+        }
+}

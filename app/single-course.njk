@@ -1,0 +1,81 @@
+{% extends "template.njk" %}
+
+{% from "pages/Common/Breadcrumb.njk" import breadcrumbBlock %}
+
+{% block main %}
+{% include "pages/Common/Header.njk" %}
+
+{{ breadcrumbBlock(
+title = "Single Course"
+) }}
+
+<div class="single-course course">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-10">
+        <!-- Course Content -->
+        <div class="course-content">
+          <div class="course__thumbnails mb-4">
+            <img class="w-100" src="./image/jpg/blog/blog-1.jpg" alt="">
+            <div class="course__bottom d-flex align-items-center justify-content-between pt-4 pb-4">
+              <div class="course__details course__details d-flex justify-content-between gap-4">
+              <div class="course__details__classes d-flex gap-2">
+                <div class="course__details__icon"><img src="./image/svg/book.svg" alt=""></div>
+                <div class="course__details__text">20 <span>Classes</span></div>
+              </div>
+              <div class="course__details__duration d-flex gap-2">
+                <div class="course__details__icon"><img src="./image/svg/feather-users.svg" alt=""></div>
+                <div class="course__details__text">24-36 <span>Months</span></div>
+              </div>
+            </div>
+              <div class="course__content__fee d-inline-flex align-content-center text-center py-1 px-3">
+              Price: <span> $50.00</span></div>
+            </div>
+       
+          </div>
+          <h4>Course Details</h4>
+          <p>Proactively unleash unique metrics rather than technically sound testing procedures. Authoritatively negotiate vertical core competencies and 24/7 imperatives. Appropriately maximize prospective relationships through pandemic vortals. Seamlessly whiteboard vertical interdependent imperatives.</p>
+          <p>Professionally incubate covalent materials before visionary sources. Energistically disintermediate global convergence whereas holistic methods.</p>
+          <div class="feature-courses">
+            <div class="section-title-block">
+              <h3 class="section-title">Other Courses</h3>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="feature-courses__single">
+                  <div class="feature-courses__single__img">
+                    <img src="./image/jpg/blog/blog-1.jpg" alt="">
+                  </div>
+                  <h4>Course Details</h4>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="feature-courses__single">
+                  <div class="feature-courses__single__img">
+                    <img src="./image/jpg/blog/blog-2.jpg" alt="">
+                  </div>
+                  <h4>Course Details</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <!-- Course Sidebar -->
+        <div class="course-sidebar">
+            <div class="this-is-sidebar">
+              <h1>hello</h1>
+            </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+</div>
+
+
+
+{% include "pages/Common/Footer.njk" %}
+{% endblock %}
