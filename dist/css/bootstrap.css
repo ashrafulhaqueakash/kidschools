@@ -207,6 +207,9 @@
 .bg-gradient-3 {
   background: linear-gradient(180deg, #EEFCFF 0%, rgba(244, 253, 255, 0) 100%);
 }
+.bg-gradient-4 {
+  background: linear-gradient(180deg, #FFEDE9 0%, rgba(255, 237, 233, 0) 82.8%);
+}
 
 .gradient-primary-secondary {
   color: linear-gradient(169deg, #5B6BE5 0%, #E45A91 46.88%, #F7A355);
@@ -419,6 +422,10 @@
 
 .bg-gradient-3 {
   background: linear-gradient(180deg, #EEFCFF 0%, rgba(244, 253, 255, 0) 100%);
+}
+
+.bg-gradient-4 {
+  background: linear-gradient(180deg, #FFEDE9 0%, rgba(255, 237, 233, 0) 82.8%);
 }
 
 .gradient-primary-secondary {

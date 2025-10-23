@@ -200,6 +200,9 @@
 .bg-gradient-3 {
   background: linear-gradient(180deg, #EEFCFF 0%, rgba(244, 253, 255, 0) 100%);
 }
+.bg-gradient-4 {
+  background: linear-gradient(180deg, #FFEDE9 0%, rgba(255, 237, 233, 0) 82.8%);
+}
 
 .gradient-primary-secondary {
   color: linear-gradient(169deg, #5B6BE5 0%, #E45A91 46.88%, #F7A355);
@@ -1185,9 +1188,6 @@ p {
   padding-top: 0;
 }
 
-.footer-section {
-  padding-top: 40px;
-}
 .footer-section .footer-top-shape {
   position: absolute;
   top: 30%;
@@ -1290,6 +1290,8 @@ p {
   padding-top: 40px;
   padding-bottom: 250px;
   min-height: 850px;
+  position: relative;
+  z-index: 1;
 }
 .hero-area .pre_heading {
   font-size: calc(28px + 1vw);
@@ -1299,6 +1301,13 @@ p {
   .hero-area .pre_heading {
     font-size: 40px;
   }
+}
+.hero-area .shape-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
 }
 
 .counters {
