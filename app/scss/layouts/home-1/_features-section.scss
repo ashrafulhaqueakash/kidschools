@@ -222,6 +222,10 @@
     position: relative;
     z-index: 1;
     overflow: hidden;
+    margin-bottom: 20px;
+     @media (min-width: 576px) {
+      margin-bottom: 0;
+     }
     &::before {
       content: "";
       position: absolute;
@@ -231,7 +235,6 @@
       width: 1px;
       height: 30px;
       background-color: #fff;
-      display: none;
       @media (min-width: 768px) {
         display: block;
       }
@@ -239,9 +242,7 @@
     &__classes,
     &__duration {
       color: #fff;
-      margin-bottom: 20px;
-      @media (min-width: 768px) {
-        margin-bottom: 0;
+      @media (min-width: 576px) {
         padding: 5px 20px;
       }
       @media (min-width: 992px) {

@@ -1694,6 +1694,12 @@ p {
   position: relative;
   z-index: 1;
   overflow: hidden;
+  margin-bottom: 20px;
+}
+@media (min-width: 576px) {
+  .course__details {
+    margin-bottom: 0;
+  }
 }
 .course__details::before {
   content: "";
@@ -1704,7 +1710,6 @@ p {
   width: 1px;
   height: 30px;
   background-color: #fff;
-  display: none;
 }
 @media (min-width: 768px) {
   .course__details::before {
@@ -1713,11 +1718,9 @@ p {
 }
 .course__details__classes, .course__details__duration {
   color: #fff;
-  margin-bottom: 20px;
 }
-@media (min-width: 768px) {
+@media (min-width: 576px) {
   .course__details__classes, .course__details__duration {
-    margin-bottom: 0;
     padding: 5px 20px;
   }
 }
