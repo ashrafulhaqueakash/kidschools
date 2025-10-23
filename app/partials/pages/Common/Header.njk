@@ -1,55 +1,96 @@
-  <header class="site-header">
-    <div class="site-header__bottom">
-        <!-- Shape 1 -->
-  <div class="shape-1">
-    <img src="/image/svg/balloon.svg" alt="">
-  </div>
-  <!-- Shape 2 -->
-  <div class="shape-2">
-    <img src="/image/svg/kite.svg" alt="">
-  </div>
-  <!-- Shape 3 -->
-  <div class="shape-3">
-    <img src="/image/svg/betterfly.svg" alt="">
-  </div>
-      <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <a class="navbar-brand" href="index.html"><img class="w-100" src="./image/core/logo.png" alt=""></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse main-menu" id="navbarSupportedContent">
-            <button type="button" class="btn-close navbar-toggler"  data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"></button>
-            <div class="collapse-inner d-lg-flex align-items-center justify-content-end me-5 w-100">
-              <ul class="navbar-nav mb-4 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link active text-secondary" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="about.html">About</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="admission.html">Admission</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="blog.html">Blog</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="course.html">Course</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="contact.html">Contact</a>
-                </li>
-              </ul>
-              <div class="site-header__button d-sm-none">
-                <a href="tel:(239)555-0108" class="btn btn-outline"><i class="fas fa-mobile-alt"></i> (239) 555-0108</i></a>
-              </div>
+<header class="site-header">
+  <div class="site-header__bottom">
+    <!-- Shape 1 -->
+    <div class="shape-1">
+      <img src="/image/svg/balloon.svg" alt="">
+    </div>
+    <!-- Shape 2 -->
+    <div class="shape-2">
+      <img src="/image/svg/kite.svg" alt="">
+    </div>
+    <!-- Shape 3 -->
+    <div class="shape-3">
+      <img src="/image/svg/betterfly.svg" alt="">
+    </div>
+    <div class="container">
+      <nav class="site-menu-main navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html"><img class="w-100" src="./image/core/logo.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse main-menu" id="navbarSupportedContent">
+          <button type="button" class="btn-close navbar-toggler" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation"></button>
+          <div class="collapse-inner d-lg-flex align-items-center justify-content-end me-5 w-100">
+            <ul class="navbar-nav mb-4 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active text-secondary" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item nav-item-has-children">
+                <a href="#" class="nav-link nav-link-item drop-trigger">Pages <i class="fas fa-angle-down"></i>
+                </a>
+                <ul class="sub-menu" id="submenu-1">
+                  <li class="nav-item sub-menu--item">
+                    <a href="about.html">About Us</a>
+                  </li>
+                  <li class="nav-item sub-menu--item">
+                    <a href="teachers.html">Teachers Pages</a>
+                  </li>
+                  <li class="nav-item sub-menu--item nav-item-has-children">
+                    <a href="#" data-menu-get="h3" class="drop-trigger">Blogs<i class="fas fa-angle-down"></i>
+                    </a>
+                    <ul class="sub-menu" id="submenu-2">
+                      <li class="nav-item sub-menu--item">
+                        <a href="blog.html">Blog</a>
+                      </li>
+                      <li class="nav-item sub-menu--item">
+                        <a href="single-blog.html">Single Blog</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item sub-menu--item nav-item-has-children">
+                    <a href="#" data-menu-get="h3" class="drop-trigger">Course<i class="fas fa-angle-down"></i>
+                    </a>
+                    <ul class="sub-menu" id="submenu-2">
+                      <li class="nav-item sub-menu--item">
+                        <a href="course.html">Course</a>
+                      </li>
+                      <li class="nav-item sub-menu--item">
+                        <a href="single-course.html">Course Single</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item sub-menu--item">
+                    <a href="gallery.html">Gallery</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="blog.html">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="course.html">Course</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+            <div class="site-header__button d-sm-none">
+              <a href="tel:(239)555-0108" class="btn btn-outline"><i class="fas fa-mobile-alt"></i> (239)
+                555-0108</i></a>
             </div>
           </div>
-          <div class="site-header__button d-none d-sm-block">
-            <a href="tel:(239)555-0108" class="btn btn-outline header-btn"><i class="fas fa-mobile-alt"></i> (239) 555-0108</i></i></a>
-          </div>
-        </nav>
-      </div>
+        </div>
+        <div class="site-header__button d-none d-sm-block">
+          <a href="tel:(239)555-0108" class="btn btn-outline header-btn"><i class="fas fa-mobile-alt"></i> (239)
+            555-0108</i></i></a>
+        </div>
+      </nav>
     </div>
+  </div>
 </header>

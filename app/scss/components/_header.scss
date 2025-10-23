@@ -6,6 +6,8 @@
   .nav-item {
     .nav-link {
       border-bottom: 2px solid transparent;
+      color: $heading-color;
+      font-weight: 500;
       @media (min-width: 1200px) {
         margin: 0 10px;
         padding-left: 0.5rem;
@@ -14,6 +16,7 @@
       &.active,
       &:hover {
         border-bottom: 2px solid $secondary;
+        color: $primary;
       }
     }
   }
@@ -27,10 +30,10 @@
     .shape-1,
     .shape-2,
     .shape-3 {
-        display: none;
-        @media (min-width: 992px) {
-          display: block;
-        }
+      display: none;
+      @media (min-width: 992px) {
+        display: block;
+      }
       img {
         width: 100%;
         height: 100%;
@@ -69,6 +72,89 @@
       }
       i {
         margin-right: 8px;
+      }
+    }
+    .sub-menu {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      z-index: 500;
+      background-color: #fff;
+      box-shadow: -2px 2px 70px -25px rgba(0, 0, 0, 0.3);
+      padding: 0px 0;
+      min-width: 227px;
+      max-width: 227px;
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+      transform: translateY(10px);
+      transition: opacity 0.3s ease, transform 0.3s ease;
+      list-style: none;
+      /* nested submenu */
+      .sub-menu {
+        top: 0;
+        left: 100%;
+        margin-top: 0;
+      }
+
+      &--item {
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 1.75;
+        color: $heading-color;
+        transition: 0.4s;
+
+        > a {
+          display: block;
+          color: inherit;
+          padding: 10px 25px;
+          transition: 0.3s ease;
+          width: 100%;
+          &:hover {
+            color: $primary;
+            background-color: rgba($primary, 0.05);
+          }
+        }
+      }
+    }
+
+    /* === Show submenu on hover === */
+    .nav-item-has-children {
+      position: relative;
+      display: flex;
+      align-items: center;
+      a{
+        color: $heading-color;
+        &:hover{
+          color: $primary;
+        }
+      }
+      &:hover > .sub-menu,
+      &:focus-within > .sub-menu {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+        transform: translateY(0);
+      }
+
+      .nav-item{
+        a{
+          position: relative;
+          i{
+           position: absolute;
+           right: 7%;
+           top: 50%;
+            transform: translateY(-50%);
+          }
+        }
+      }
+
+      /* keep nested sub-sub menus working */
+      .sub-menu > .nav-item-has-children:hover > .sub-menu {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+        transform: translateY(0);
       }
     }
 
@@ -126,6 +212,7 @@
         .navbar-nav {
           width: 100%;
         }
+        
         .btn-close {
           position: absolute;
           right: 16px;
