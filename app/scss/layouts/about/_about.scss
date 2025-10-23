@@ -23,13 +23,13 @@
 
   &__single {
     &:nth-child(1n+2) .progress-bar {
-      background-color: $primary;
+      background-color:$curious-blue;
     }
     &:nth-child(2n+1) .progress-bar {
-      background-color: #3b82f6;
+      background-color: $koromiko;
     }
     &:nth-child(3n+1) .progress-bar {
-      background-color: $koromiko ;
+      background-color: $shamrock ;
     }
   }
 }

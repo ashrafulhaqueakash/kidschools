@@ -2400,13 +2400,13 @@ p {
   }
 }
 .ks-mission-progress__single:nth-child(1n+2) .progress-bar {
-  background-color: #FE8083;
+  background-color: #1D85E8;
 }
 .ks-mission-progress__single:nth-child(2n+1) .progress-bar {
-  background-color: #3b82f6;
+  background-color: #FFC258;
 }
 .ks-mission-progress__single:nth-child(3n+1) .progress-bar {
-  background-color: #FFC258;
+  background-color: #2DC8A8;
 }
 
 .about-block__img {
@@ -2549,6 +2549,10 @@ p {
   justify-content: center;
   background: #FFF;
   box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.05);
+}
+.contact-bottom-widgets .single-widget__icon img,
+.contact-bottom-widgets .single-widget__icon svg {
+  width: 36px;
 }
 .contact-bottom-widgets .single-widget__content {
   margin-left: 10px;

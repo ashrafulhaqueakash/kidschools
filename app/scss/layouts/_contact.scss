@@ -25,6 +25,10 @@
             justify-content: center;
             background: #FFF;
             box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.05);
+            img,
+            svg{
+                width: 36px;
+            }
         }
         &__content{
             margin-left: 10px;
