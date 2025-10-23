@@ -1,0 +1,75 @@
+@use "../abstract" as *;
+
+//=============== 25. GALLERY CSS START HERE ===============
+
+.kd-gallery {
+    position: relative;
+    $self: &;
+
+    &-thumb {
+        overflow: hidden;
+        border-radius: 16px;
+
+        img {
+            transition: 0.4s;
+            width: 100%;
+        }
+
+        &::before {
+            content: "";
+            height: 100%;
+            width: 100%;
+           background: linear-gradient(180deg, #343742 0%, #090B18 100%);
+            position: absolute;
+            left: 0;
+            top: 0;
+            border-radius: 16px;
+            opacity: 0;
+            visibility: hidden;
+            transition: 0.4s;
+            z-index: 1;
+        }
+
+        &-wrapper {
+            overflow: hidden;
+
+            &:hover {
+                #{$self} {
+                    &-thumb {
+                        &::before {
+                            opacity: 0.8;
+                            visibility: visible;
+                        }
+
+                        img {
+                            transform: scale(1.06);
+                        }
+                    }
+
+                    &-icon {
+                        opacity: 1;
+                        visibility: visible;
+                        transition-delay: .2s;
+                    }
+                }
+            }
+        }
+    }
+
+    &-icon {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: $white;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 2;
+
+        a {
+            font-size: 25px;
+        }
+    }
+}
+
+//GALLERY CSS END

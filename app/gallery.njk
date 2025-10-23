@@ -1,0 +1,129 @@
+{% extends "template.njk" %}
+
+{% from "pages/Common/Breadcrumb.njk" import breadcrumbBlock %}
+
+{% block main %}
+{% include "pages/Common/Header.njk" %}
+
+{{ breadcrumbBlock(
+title = "Gallery"
+) }}
+
+
+
+
+<div class="kd-gallery-area p-relative pt-120 pb-95 p-relative">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-3">
+                  <div class="row">
+                     <div class="col-12">
+                        <div class="kd-gallery mb-25">
+                           <div class="kd-gallery-thumb-wrapper">
+                              <div class="kd-gallery-thumb">
+                                 <img src="./image/jpg/gallery/d1.png" alt="img not found!">
+                              </div>
+                              <div class="kd-gallery-icon">
+                                 <a href="./image/jpg/gallery/d1.png" class="popup-image"><i class="fas fa-search-plus"></i></a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-12">
+                        <div class="kd-gallery mb-25">
+                           <div class="kd-gallery-thumb-wrapper">
+                              <div class="kd-gallery-thumb">
+                                 <img src="./image/jpg/gallery/d4.png" alt="img not found!">
+                              </div>
+                              <div class="kd-gallery-icon">
+                                 <a href="./image/jpg/gallery/d4.png" class="popup-image"><i class="fas fa-search-plus"></i></a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-5">
+                  <div class="kd-gallery mb-25">
+                     <div class="kd-gallery-thumb-wrapper">
+                        <div class="kd-gallery-thumb">
+                           <img src="./image/jpg/gallery/d2.png" alt="img not found!">
+                        </div>
+                        <div class="kd-gallery-icon">
+                           <a href="./image/jpg/gallery/d2.png" class="popup-image"><i class="fas fa-search-plus"></i></a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-4">
+                  <div class="kd-gallery mb-25">
+                     <div class="kd-gallery-thumb-wrapper">
+                        <div class="kd-gallery-thumb">
+                           <img src="./image/jpg/gallery/d3.png" alt="img not found!">
+                        </div>
+                        <div class="kd-gallery-icon">
+                           <a href="./image/jpg/gallery/d3.png" class="popup-image"><i class="fas fa-search-plus"></i></a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-lg-5">
+                  <div class="kd-gallery mb-25">
+                     <div class="kd-gallery-thumb-wrapper">
+                        <div class="kd-gallery-thumb">
+                           <img src="./image/jpg/gallery/d5.png" alt="img not found!">
+                        </div>
+                        <div class="kd-gallery-icon">
+                           <a href="./image/jpg/gallery/d5.png" class="popup-image"><i class="fas fa-search-plus"></i></a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-4">
+                  <div class="kd-gallery mb-25">
+                     <div class="kd-gallery-thumb-wrapper">
+                        <div class="kd-gallery-thumb">
+                           <img src="./image/jpg/gallery/d6.png" alt="img not found!">
+                        </div>
+                        <div class="kd-gallery-icon">
+                           <a href="./image/jpg/gallery/d6.png" class="popup-image"><i class="fas fa-search-plus"></i></a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-3">
+                  <div class="row">
+                     <div class="col-12">
+                        <div class="kd-gallery mb-25">
+                           <div class="kd-gallery-thumb-wrapper">
+                              <div class="kd-gallery-thumb">
+                                 <img src="./image/jpg/gallery/d7.png" alt="img not found!">
+                              </div>
+                              <div class="kd-gallery-icon">
+                                 <a href="./image/jpg/gallery/d7.png" class="popup-image"><i class="fas fa-search-plus"></i></a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-12">
+                        <div class="kd-gallery mb-25">
+                           <div class="kd-gallery-thumb-wrapper">
+                              <div class="kd-gallery-thumb">
+                                 <img src="./image/jpg/gallery/d8.png" alt="img not found!">
+                              </div>
+                              <div class="kd-gallery-icon">
+                                 <a href="./image/jpg/gallery/d8.png" class="popup-image"><i class="fas fa-search-plus"></i></a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+{% include "pages/Common/Footer.njk" %}
+{% endblock %}
