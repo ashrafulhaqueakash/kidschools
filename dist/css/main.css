@@ -2150,28 +2150,29 @@ p {
   /* 166.667% */
   letter-spacing: 0.45px;
 }
-.t-carousel__thumb.slick-slide .t-carousel__avatar {
-  width: 60px !important;
-  height: 60px !important;
-  transition: width 0.35s ease, height 0.35s ease, transform 0.35s ease;
+.t-carousel__thumbs {
+  width: 70%;
+  margin: 0 auto;
+  padding: 0 40px;
 }
-.t-carousel__thumb.slick-slide.slick-center .t-carousel__avatar {
-  width: 80px !important;
-  height: 80px !important;
-  transform: translateZ(0);
+.t-carousel__thumb {
+  margin: 20px 10px;
+  border-radius: 50%;
 }
-.t-carousel__thumb.slick-slide[data-slick-index="2"].prev-slide .t-carousel__avatar, .t-carousel__thumb.slick-slide[data-slick-index="2"].next-slide .t-carousel__avatar {
-  width: 65px !important;
-  height: 65px !important;
+.t-carousel__thumb.slick-center {
+  transition: 0.4s;
+  transform: scale(1.2);
+}
+.t-carousel__thumb.slick-center .t-carousel__avatar {
+  border: 5px solid #FFF;
+  background-color: #fff;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.12);
 }
 .t-carousel__avatar {
   border: 5px solid #fff;
-  width: 80px !important;
-  height: 80px;
   border-radius: 50%;
   background-color: #fff;
   display: block;
-  margin: 20px auto;
   transition: 0.4s;
 }
 .t-carousel__avatar-img {

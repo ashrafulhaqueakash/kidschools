@@ -27,24 +27,25 @@ $(document).ready(function () {
             });
 
             // Avatar nav slider (centered thumbs)
-            $('.t-carousel__thumbs').slick({
-                  slidesToShow: 6,
-                  slidesToScroll: 1,
-                  asNavFor: '.t-carousel__slides',
-                  centerMode: true,
-                  centerPadding: '0',
-                  focusOnSelect: true,
-                  arrows: true,
-                  loop: true,
-                  prevArrow: '<button type="button" class="slick-prev custom-prev-button"><i class="fa fa-chevron-left"></i></button>',
-                  nextArrow: '<button type="button" class="slick-next custom-next-button"><i class="fa fa-chevron-right"></i></button>',
-                  responsive: [
-                        { breakpoint: 1170, settings: { slidesToShow: 6 } },
-                        { breakpoint: 900, settings: { slidesToShow: 5 } },
-                        { breakpoint: 768, settings: { slidesToShow: 3 } },
-                        { breakpoint: 480, settings: { slidesToShow: 3 } }
-                  ]
-            });
+       $('.t-carousel__thumbs').slick({
+  slidesToShow: 5,
+  slidesToScroll: 1,
+  asNavFor: '.t-carousel__slides',
+  centerMode: true,
+  centerPadding: '0px',
+  focusOnSelect: true,
+  arrows: true,
+  infinite: true,
+  prevArrow: '<button type="button" class="slick-prev custom-prev-button"><i class="fa fa-chevron-left"></i></button>',
+  nextArrow: '<button type="button" class="slick-next custom-next-button"><i class="fa fa-chevron-right"></i></button>',
+  responsive: [
+    { breakpoint: 1170, settings: { slidesToShow: 5 } },
+    { breakpoint: 900, settings: { slidesToShow: 4 } },
+    { breakpoint: 768, settings: { slidesToShow: 3 } },
+    { breakpoint: 480, settings: { slidesToShow: 2 } }
+  ]
+});
+
       }
       // Dropdown Menu
       $('.dropdown-menu a.dropdown-toggle').on('click', function (e) {
