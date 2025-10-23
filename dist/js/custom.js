@@ -66,18 +66,18 @@ $(document).ready(function() {
         });
 
     }
-    // Dropdown Menu
-    $('.dropdown-menu a.dropdown-toggle').on('click', function(e) {
-        if (!$(this).next().hasClass('show')) {
-            $(this).parents('.dropdown-menu').first().find('.show').removeClass("show");
-        }
-        var $subMenu = $(this).next(".dropdown-menu");
-        $subMenu.toggleClass('show');
-        $(this).parents('li.nav-item.dropdown.show').on('hidden.bs.dropdown', function(e) {
-            $('.dropdown-submenu .show').removeClass("show");
-        });
-        return false;
-    });
+    // // Dropdown Menu
+    // $('.dropdown-menu a.dropdown-toggle').on('click', function (e) {
+    //       if (!$(this).next().hasClass('show')) {
+    //             $(this).parents('.dropdown-menu').first().find('.show').removeClass("show");
+    //       }
+    //       var $subMenu = $(this).next(".dropdown-menu");
+    //       $subMenu.toggleClass('show');
+    //       $(this).parents('li.nav-item.dropdown.show').on('hidden.bs.dropdown', function (e) {
+    //             $('.dropdown-submenu .show').removeClass("show");
+    //       });
+    //       return false;
+    // });
 
     // Progress Bar
     (function() {
@@ -191,6 +191,16 @@ $(document).ready(function() {
             time: 1000
         });
     }
+    if ($.fn.Fancybox) {
+        // About Us Fancy Box
+        Fancybox.bind("[data-fancybox]", {
+            Video: {
+                autoplay: true
+            }
+        });
+    }
+
+
     // Preloader
     $(window).load(function() {
         setTimeout(function() {
@@ -215,12 +225,6 @@ $(document).ready(function() {
     });
 
 
-    // About Us Fancy Box
-    Fancybox.bind("[data-fancybox]", {
-        Video: {
-            autoplay: true
-        }
-    });
 
 
 

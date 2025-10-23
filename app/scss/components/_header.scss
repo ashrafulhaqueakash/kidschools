@@ -73,6 +73,13 @@
       i {
         margin-right: 8px;
       }
+      &:hover{
+        background-color: $primary;
+        color: #fff;
+           i {
+        margin-right: 8px;
+      }
+      }
     }
     .sub-menu {
       position: absolute;

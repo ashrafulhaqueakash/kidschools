@@ -629,6 +629,13 @@ p {
 .site-header__bottom .header-btn i {
   margin-right: 8px;
 }
+.site-header__bottom .header-btn:hover {
+  background-color: #FE8083;
+  color: #fff;
+}
+.site-header__bottom .header-btn:hover i {
+  margin-right: 8px;
+}
 .site-header__bottom .sub-menu {
   position: absolute;
   top: 100%;
