@@ -913,21 +913,91 @@ p {
   color: #D7E0E7;
 }
 
-.team-member__item {
+.team__item {
   text-align: center;
   border: none;
+  position: relative;
 }
-.team-member__item__img {
+.team__item__image {
   width: 100%;
+  height: 340px;
 }
-.team-member__item__img img {
+.team__item__image img {
   width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
-.team-member__item__meta-info {
+.team__item__meta-info {
   padding-top: 10px;
   padding-left: 10px;
   padding-right: 10px;
   padding-bottom: 10px;
+}
+.team__item .social-profile {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  content: "";
+  transition: all 0.4s ease-in-out;
+  z-index: 2;
+  display: inline-block;
+  overflow: hidden;
+  z-index: 99;
+}
+.team__item .social-profile ul {
+  transform: translateY(-100px);
+  transition: all 0.6s ease-in-out;
+  opacity: 0;
+  visibility: hidden;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.team__item .social-profile ul li {
+  margin-bottom: 10px;
+}
+.team__item .social-profile ul li a {
+  width: 40px;
+  height: 40px;
+  line-height: 43px;
+  text-align: center;
+  font-size: 18px;
+  display: block;
+  background: #fff;
+  color: #FE8083;
+  transition: all 0.4s ease-in-out;
+  text-align: center;
+  margin: 0 auto;
+  border-radius: 50%;
+}
+.team__item .social-profile ul li a:hover {
+  background-color: #FE8083;
+  color: #fff;
+}
+.team__item .social-profile .plus-btn {
+  z-index: 2;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 18px;
+  display: inline-block;
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+.team__item .social-profile .plus-btn:hover {
+  background-color: #fff;
+  color: #FE8083;
+}
+.team__item .social-profile:hover ul {
+  transform: translateY(0);
+  opacity: 1;
+  visibility: visible;
 }
 
 .sidebar .widgets {

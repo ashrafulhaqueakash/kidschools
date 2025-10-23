@@ -1,12 +1,16 @@
 @use "../abstract" as *;
-.team-member{
+.team{
     &__item{
         text-align: center;
         border: none;
-        &__img{
+        position: relative;
+        &__image{
             width: 100%;
+            height: 340px;
             img{
                 width: 100%;
+                height: 100%;
+                object-fit: cover;
             }
         }
         &__meta-info{
@@ -15,5 +19,83 @@
             padding-right: 10px;
             padding-bottom: 10px;
         }
+          .social-profile {
+            position: absolute;
+            right: 20px;
+            top: 20px;
+            content: "";
+            -webkit-transition: all .4s ease-in-out;
+            transition: all .4s ease-in-out;
+            z-index: 2;
+            display: inline-block;
+            overflow: hidden;
+            z-index: 99;
+
+            ul {
+                transform: translateY(-100px);
+                transition: all 0.6s ease-in-out;
+                opacity: 0;
+                visibility: hidden;
+                list-style: none;
+                margin: 0;
+                padding: 0;
+
+                li {
+                    margin-bottom: 10px;
+
+                    a {
+                        width: 40px;
+                        height: 40px;
+                        line-height: 43px;
+                        text-align: center;
+                        font-size: 18px;
+                        display: block;
+                        background: $white;
+                        color:$primary;
+                        -webkit-transition: all .4s ease-in-out;
+                        transition: all .4s ease-in-out;
+                        text-align: center;
+                        margin: 0 auto;
+                        border-radius: 50%;
+
+                        &:hover {
+                            background-color:$primary;
+                            color: $white;
+                        }
+                    }
+                }
+            }
+
+            .plus-btn {
+                z-index: 2;
+                cursor: pointer;
+                width: 40px;
+                height: 40px;
+                line-height: 40px;
+                text-align: center;
+                font-size: 18px;
+                display: inline-block;
+                background: transparent;
+                border: 1px solid $white;
+                color: $white;
+                // @include transition;
+                border-radius: 50%;
+                margin-bottom: 10px;
+
+                &:hover {
+                    background-color: $white;
+                    color:$primary;
+                }
+            }
+
+            &:hover {
+                ul {
+                    transform: translateY(0);
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }
+        }
     }
 }
+
