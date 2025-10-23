@@ -39,6 +39,7 @@ p {
     max-height: 46px;
 }
 .pt-100{
+    padding-top: 40px;
     @media (min-width:576px) {
         padding-top: 60px;
         
@@ -53,6 +54,7 @@ p {
     }
 }
 .pb-100{
+    padding-bottom: 40px;
     @media (min-width:576px) {
         padding-bottom: 60px;
         

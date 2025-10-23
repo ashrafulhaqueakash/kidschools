@@ -13,28 +13,37 @@
       object-fit: contain;
     }
   }
-  .footer-content{
-    p{
-      font-size: 17px;
+  .footer-content {
+    p {
+      font-size: 14px;
+      @media (min-width: 768px) {
+        font-size: 16px;
+      }
     }
-    .widget-title{
+    .widget-title {
       font-size: 24px;
     }
   }
-  .btn{
-    i{
+  .btn {
+    i {
       padding-left: 0;
-      font-size: 19px;
+      font-size: 16px;
+      @media (min-width: 768px) {
+        font-size: 19px;
+      }
     }
   }
-  .widget-list{
-    li{
+  .widget-list {
+    li {
       margin-bottom: 10px;
-      a{
+      a {
         color: $heading-color;
-        font-size: 19px;
+        font-size: 16px;
+        @media (min-width: 768px) {
+          font-size: 19px;
+        }
         transition: 0.3s;
-        &:hover{
+        &:hover {
           color: $secondary;
         }
       }
@@ -44,21 +53,21 @@
     padding-top: 60px;
     position: relative;
     z-index: 2;
-    @media (min-width: 767px){
+    @media (min-width: 767px) {
       padding-top: 80px;
     }
-    @media (min-width: 1200px){
-      padding-top:100px;
+    @media (min-width: 1200px) {
+      padding-top: 100px;
     }
-    @media (min-width: 1600px){
+    @media (min-width: 1600px) {
       padding-top: 350px;
     }
-    .footer-bottom-pb{
+    .footer-bottom-pb {
       padding-bottom: 10px;
-      @media (min-width: 1200px){
+      @media (min-width: 1200px) {
         padding-bottom: 20px;
       }
-      @media (min-width: 1600px){
+      @media (min-width: 1600px) {
         padding-bottom: 30px;
       }
     }
@@ -76,15 +85,15 @@
       object-fit: contain;
     }
   }
-  .footer-copyright{
+  .footer-copyright {
     color: $white;
-    &__links{
-      a{
+    &__links {
+      a {
         color: $white;
         margin-left: 20px;
         font-size: 16px;
         transition: 0.3s;
-        &:hover{
+        &:hover {
           color: $secondary;
         }
       }
