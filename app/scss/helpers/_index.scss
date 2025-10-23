@@ -1,7 +1,6 @@
 @use "../abstract" as *;
 @forward "./typography";
 @forward "./section-padding";
-@forward "./spacing";
 @forward "./utility";
 
 .color-inherit{
@@ -10,12 +9,7 @@
 .text-underline{
     text-decoration: underline;
 }
-// p{
-//     font-family: $font-opensans;
-//     font-size: 18px;
-//     line-height: 28px;
-//     color: $primary;
-// }
+
 p {
     line-height: pxToEm(28,18);
     margin-bottom: 20px;
