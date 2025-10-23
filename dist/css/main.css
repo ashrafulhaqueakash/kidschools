@@ -1104,6 +1104,28 @@ p {
   visibility: visible;
 }
 
+.team-member__item {
+  border: none;
+}
+.team-member__item__meta-info {
+  padding-top: 15px;
+  padding-bottom: 0;
+  text-align: center;
+}
+.team-member__item__name {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 34px;
+}
+.team-member__item__designation {
+  font-family: "Open Sans";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+  text-transform: uppercase;
+  color: #7f92a3;
+}
+
 .kd-gallery {
   position: relative;
 }
