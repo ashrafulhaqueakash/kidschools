@@ -59,9 +59,15 @@
     }
 
     &__page-title{
-        font-size: 40px;
+        font-size: 30px;
         font-style: normal;
         font-weight: 800;
         line-height: 3.375rem;
+        @media (min-width: 768px) {
+            font-size: 36px;
+        }
+        @media (min-width: 992px) {
+            font-size: 40px;
+        }
     }
 }
