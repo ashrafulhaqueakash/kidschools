@@ -98,11 +98,16 @@
         margin-left: 7px;
       }
     }
-    &__title {
+    &__title,
+    &__title a {
       font-size: 24px;
       font-weight: 600;
       line-height: 34px;
       color: $heading-color;
+      transition: 0.4s;
+    }
+    &__title a:hover {
+      color: $primary;
     }
     .feature-course__details {
       position: relative;
@@ -151,24 +156,24 @@
 }
 
 // Single Course
-.course-sidebar{
-    // @media (min-width: 992px) {
-    //     padding-left: 5%;
-    // }
-    .course__info__widget {
+.course-sidebar {
+  // @media (min-width: 992px) {
+  //     padding-left: 5%;
+  // }
+  .course__info__widget {
     &__item {
-        &__icon {
+      &__icon {
         width: 56px;
         height: 56px;
         border-radius: 50%;
         display: flex;
-        svg{
+        svg {
           width: 32px;
           height: 32px;
         }
-        }
+      }
     }
-    }
+  }
 }
 .course {
   padding-top: 50px;
@@ -196,8 +201,8 @@
     padding-left: 20px;
     padding-right: 20px;
     @media (min-width: 992px) {
-        padding-left: 20px;
-    padding-right: 40px;
+      padding-left: 20px;
+      padding-right: 40px;
     }
   }
   &__details {
@@ -225,7 +230,6 @@
       @media (min-width: 768px) {
         margin-bottom: 0;
         padding: 5px 20px;
-
       }
       @media (min-width: 992px) {
         display: flex;
@@ -237,11 +241,11 @@
       height: 30px;
       margin-top: 0px;
       @media (min-width: 992px) {
-         flex: 0 0 34px;
+        flex: 0 0 34px;
         width: 34px;
-      height: 34px;
+        height: 34px;
       }
-      svg{
+      svg {
         width: 100%;
         height: 100%;
       }
@@ -284,37 +288,61 @@
   }
 }
 
-
-.feature-courses{
-  &__single{
-    &__img{
+.feature-courses {
+  &__single {
+    &__img {
       width: 100%;
       margin-bottom: 10px;
-      img{
+      img {
         width: 100%;
       }
     }
-    &__heading{
+    &__heading {
       font-family: "Open Sans";
       font-size: 17px;
-    font-weight: 400;
-    line-height: 29px;
+      font-weight: 400;
+      line-height: 29px;
     }
   }
 }
-
-.course__widget{
-  transition: 0.4s;
-  &__item{
-    
+// Widget Styles
+.course__info__widget {
+  &__item {
+    &__content {
+      &__text {
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 29px;
+      }
+      &__title {
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 28px;
+        margin-bottom: 10px;
+      }
+    }
   }
-  &__icon{
+}
+.course__widget {
+  transition: 0.4s;
+  &__content {
+    &__heading {
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 28px;
+      transition: 0.4s;
+      &:hover {
+        color: $primary;
+        text-decoration: underline;
+      }
+    }
+  }
+  &__icon {
     width: 40px;
     height: 40px;
-
   }
   border: 1px solid transparent;
-    &:hover{
-      border: 1px solid #D7E0E7;
-    }
+  &:hover {
+    border: 1px solid #d7e0e7;
+  }
 }
