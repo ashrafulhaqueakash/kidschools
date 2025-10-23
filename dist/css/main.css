@@ -1291,10 +1291,16 @@ p {
 .sidebar .widgets {
   border-radius: 10px;
   margin-bottom: 25px;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 0px;
+  padding-right: 0px;
   padding-top: 25px;
   padding-bottom: 20px;
+}
+@media (min-width: 992px) {
+  .sidebar .widgets {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 }
 .sidebar .widgets__heading {
   font-weight: 600;
