@@ -2176,8 +2176,13 @@ p {
 
 .single-blog__image {
   width: 100%;
-  height: 435px;
+  height: 220px;
   margin-bottom: 20px;
+}
+@media (min-width: 992px) {
+  .single-blog__image {
+    height: 435px;
+  }
 }
 .single-blog__image img {
   width: 100%;
