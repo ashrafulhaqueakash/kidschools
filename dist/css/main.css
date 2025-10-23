@@ -1293,13 +1293,15 @@ p {
   margin-bottom: 25px;
   padding-left: 0px;
   padding-right: 0px;
-  padding-top: 25px;
-  padding-bottom: 20px;
+  padding-top: 15px;
+  padding-bottom: 10px;
 }
 @media (min-width: 992px) {
   .sidebar .widgets {
     padding-left: 30px;
     padding-right: 30px;
+    padding-top: 25px;
+    padding-bottom: 20px;
   }
 }
 .sidebar .widgets__heading {
